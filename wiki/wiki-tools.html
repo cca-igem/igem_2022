@@ -1,0 +1,45 @@
+<style>
+    .wiki-tools-footer {
+        --bs-gutter-x: 1.5rem;
+        background: #222124;
+        margin: 0;
+        max-width: 100%;
+        padding: 1rem 3rem;
+        display: flex;
+        gap: 1.5em;
+    }
+    .wiki-tools-footer a {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        transition: color 0.3s;
+    }
+    .wiki-tools-footer a:hover {
+        color: #08C784;
+    }
+    .wiki-tools-footer img {
+        object-fit: contain;
+    }
+</style>
+
+<section class="wiki-tools-footer container">
+    <a id="wiki-tools-link">Access Wiki Tools</a>
+    <a id="wiki-tools-repo">View Source Code</a>
+    <img id="wiki-tools-pipeline">
+</section>
+
+<script>
+    const wikiToolsLink = document.getElementById('wiki-tools-link')
+    const wikiToolsRepo = document.getElementById('wiki-tools-repo')
+    const wikiToolsPipeline = document.getElementById('wiki-tools-pipeline')
+
+    const path = document.location.pathname.split('/')
+
+    const competitionSlug = document.location.host.split('.')[0]
+    const teamSlug = path[1]
+    const page = path[2] === '' ? 'index' : path[2]
+
+    wikiToolsLink.href = `https://tools.igem.org/wiki-tools/${competitionSlug}/${teamSlug}/${page}`
+    wikiToolsRepo.href = `https://gitlab.igem.org/${competitionSlug}/${teamSlug}`
+    wikiToolsPipeline.src = `https://gitlab.igem.org/${competitionSlug}/${teamSlug}/badges/main/pipeline.svg`
+</script>

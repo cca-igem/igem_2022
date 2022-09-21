@@ -1,5 +1,10 @@
 @import './variables'
 
+:root
+    --font-size: 1.8rem
+    --duration: .44s
+    --duration-line: .84s
+
 .hero
     color: $color-text
     background: #101010
@@ -44,8 +49,64 @@
                 width: 70%
                 margin-left: 3rem
                 line-height: 1.8
+                span.link-main
+                    display: flex
+                    position: relative
+                    align-items: center
 
+                    a
+                        margin-left: 0.8rem
+                        position: relative
+                        display: inline-block
+                        position: relative
+                        line-height: 1
+                        color: inherit
+                        div
+                            overflow: hidden
+                            &:first-child
+                                display: flex
+                                overflow: hidden
+                                text-shadow: 0 1.8rem 0 $color-text
+                            &:last-child
+                                position: absolute
+                                pointer-events: none
+                                right: 0
+                                left: 0
+                                bottom: -.3rem
+                                height: .5rem
+                                svg
+                                    display: block
+                                    position: absolute
+                                    right: 0
+                                    top: 0
+                                    width: 300%
+                                    height: .5rem
+                                    fill: none
+                                    stroke: #5a81ca
+                                    stroke-width: 1.5px
+                                    stroke-linecap: round
+                                    stroke-dasharray: 63.5px 128px
+                                    stroke-dashoffset: var(--line-offset, 190.25px)
+                                    transform: translateX(var(--line-x)) translateZ(0)
+                                    transition: transform var(--line-d, 0s), stroke-dashoffset var(--line-d, 0s)
+                            span
+                                display: block
+                                backface-visibility: hidden
+                                font-style: normal
+                                transition: transform var(--duration) ease
+                                transform: translateY(var(--m, 0))
+                                $i: 1
 
+                                @while $i < 12
+                                    &:nth-child(#{$i})
+                                        transition-delay: calc($i / 20) + s
+                                        $i: $i + 1
+
+                        &:hover
+                            --m: calc(var(--font-size) * -1)
+                            --line-d: var(--duration-line)
+                            --line-x: 65.66%
+                            --line-offset: 63.5px
         &-img
             margin-bottom: 5rem
             display: grid

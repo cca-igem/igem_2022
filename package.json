@@ -1,0 +1,22 @@
+{
+  "name": "cca-san-diego",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.igem.org/2022/cca-san-diego.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gsap": "^3.11.1",
+    "sass": "^1.54.9",
+    "vite": "^3.1.3"
+  }
+}

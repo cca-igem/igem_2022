@@ -1,22 +1,54 @@
 {
-  "name": "cca-san-diego",
+  "name": "igem_2022",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "This repository **MUST** contain all coding assets to generate your team's wiki (HTML, CSS, JavaScript, TypeScript, Python, etc).",
+  "main": "vite.config.js",
+  "dependencies": {
+    "anymatch": "^3.1.2",
+    "binary-extensions": "^2.2.0",
+    "braces": "^3.0.2",
+    "chokidar": "^3.5.3",
+    "esbuild": "^0.15.8",
+    "esbuild-linux-64": "^0.15.8",
+    "esbuild-wasm": "^0.15.8",
+    "fill-range": "^7.0.1",
+    "function-bind": "^1.1.1",
+    "glob-parent": "^5.1.2",
+    "gsap": "^3.11.1",
+    "has": "^1.0.3",
+    "immutable": "^4.1.0",
+    "is-binary-path": "^2.1.0",
+    "is-core-module": "^2.10.0",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "is-number": "^7.0.0",
+    "nanoid": "^3.3.4",
+    "normalize-path": "^3.0.0",
+    "path-parse": "^1.0.7",
+    "picocolors": "^1.0.0",
+    "picomatch": "^2.3.1",
+    "postcss": "^8.4.16",
+    "readdirp": "^3.6.0",
+    "resolve": "^1.22.1",
+    "rollup": "^2.78.1",
+    "sass": "^1.54.9",
+    "source-map-js": "^1.0.2",
+    "supports-preserve-symlinks-flag": "^1.0.0",
+    "to-regex-range": "^5.0.1",
+    "vite": "^3.1.3"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite",
-    "build": "rm -rf dist && vite build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.igem.org/2022/cca-san-diego.git"
+    "url": "git+https://github.com/cca-igem/igem_2022.git"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "gsap": "^3.11.1",
-    "sass": "^1.54.9",
-    "vite": "^3.1.3"
-  }
+  "bugs": {
+    "url": "https://github.com/cca-igem/igem_2022/issues"
+  },
+  "homepage": "https://github.com/cca-igem/igem_2022#readme"
 }

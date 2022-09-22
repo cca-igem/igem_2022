@@ -1,9 +1,7 @@
 ### Todo
 - [ ] Switch to EJS/Svelte/Vue for universal components
-- [ ] Landing page
-- [ ] Footer
-- [ ] Nav bar
 - [ ] Make layouts responsive
+- [ ] GSAP reveal on scroll
 
 ### In Progress
 - [ ] Images w/ parallax

@@ -5,7 +5,7 @@ module.exports = defineConfig({
         rollupOptions: {
             input: {
                 main: './index.html',
-                pages: './wiki/communication.html',
+                wiki: './wiki/communication.html',
                 // ...
                 // List all files you want in your build
             }

@@ -5,6 +5,7 @@ let dataScroll = new Set([
   ...document.querySelectorAll('.container-text > *'),
   ...document.querySelectorAll('.divider'),
   ...document.querySelectorAll('.img-box'),
+  ...document.querySelectorAll('iframe'),
 ]);
 
 dataScroll.forEach((el) => el.setAttribute('data-scroll', 'true'));

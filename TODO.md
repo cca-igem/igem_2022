@@ -1,11 +1,12 @@
 ### Todo
-- [ ] Switch to EJS/Svelte/Vue for universal components
 - [ ] Make layouts responsive
-- [ ] GSAP reveal on scroll
+- [ ] Improve content page palette
+- [ ] Try sticking in frameworkless web components
 
 ### In Progress
-- [ ] Images w/ parallax
+- [ ] Content: Locomotive reveal on scroll
+- [ ] "Jump To" / Table of contents section
 
 ### Done ✓
 - [X] Basic layout @ wiki/pages/communication.html
-- [X] GSAP-ScrollTrigger smooth scroll
+- [X] Locomotive scroll basics

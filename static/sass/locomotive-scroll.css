@@ -16,6 +16,7 @@ html.has-scroll-dragging {
 
 .has-scroll-smooth [data-scroll-container] {
   min-height: 100vh;
+  perspective: 1px;
 }
 
 [data-scroll-direction='horizontal'] [data-scroll-container] {

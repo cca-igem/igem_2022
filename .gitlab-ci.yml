@@ -1,12 +1,19 @@
-image: python:3.6
-
+image: node:16.5.0
 pages:
-  stage: build
+  stage: deploy
+  cache:
+    key:
+      files:
+        - package-lock.json
+      prefix: npm
+    paths:
+      - node_modules/
   script:
-  - pip install --no-cache-dir -r dependencies.txt
-  - FLASK_APP=app.py flask freeze
+    - npm install
+    - npm run build
+    - cp -a dist/. public/
   artifacts:
     paths:
-    - public
-  only:
-  - main
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH

@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
   });
-  
+
   let ul = document.querySelector('#sidebar ul');
 
   document.querySelectorAll('.project .header h1').forEach((el) => {

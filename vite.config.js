@@ -1,13 +1,15 @@
-const { defineConfig } = require('vite')
+const { defineConfig } = require('vite');
 
 module.exports = defineConfig({
-    build: {
-        rollupOptions: {
-            input: {
-                main: './views/index.html',
-                // ...
-                // List all files you want in your build
-            }
-        }
-    }
-})
+  build: {
+    rollupOptions: {
+      input: {
+        home: './index.html',
+        communication: './wiki/communication.html',
+        implementation: './wiki/implementation.html',
+        // ...
+        // List all files you want in your build
+      },
+    },
+  },
+});

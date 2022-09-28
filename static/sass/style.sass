@@ -61,10 +61,84 @@ footer
     width: 100%
     background: rgba(0,0,0,0.3)
 
+///////// NAV ////////////
+
+nav
+    width: 100%
+    position: absolute
+    background: $color-background
+    border-bottom: 1px solid $color-text
+    padding: 2rem 0
+    display: flex
+    z-index: 999
+    justify-content: flex-end
+    transition: all .3s ease
+
+    & > ul
+        list-style: none
+        padding: 0
+        margin: 0
+
+        & > li
+            display: inline-flex
+            font-size: 1.6rem
+            margin-right: 8rem
+            position: relative
+
+            a, span
+                cursor: pointer
+                transition: all .2s ease
+            & a:hover
+                color: $color-text-light
+            & span:hover
+                color: $color-text-light
+
+                [name="chevron-down-outline"]
+                    color: $color-accent
+
+            span
+                display: table-cell
+                vertical-align: middle
+
+                [name="chevron-down-outline"]
+                    font-size: 1.2rem
+                    margin-left: .8rem
+                    transition: all .2s ease
+
+                    // display: none
+
+            .submenu
+                z-index: 999
+                position: absolute
+                top: 5.6rem
+                background: $color-text-light
+                list-style: none
+                padding: 2rem 2.8rem
+                display: flex
+                flex-direction: column
+                border-radius: 3px
+                overflow: hidden
+                clip-path: inset(0 0 100% 0)
+                transition: all .5s ease
+
+                &.open
+                    clip-path: inset(0 0 0 0)
+
+                li
+                    white-space: nowrap
+                    &:not(:last-child)
+                        margin-bottom: 1.6rem
+                    a
+                        color: $color-background
+                        transition: all .2s ease
+                        &:hover
+                            color: $color-accent
+
 ///////// WIKI ////////////
 .hero
     color: $color-text
     height: 40vh
+    margin-top: calc(4rem + 1em)
     position: relative
     overflow: hidden
 

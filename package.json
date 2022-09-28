@@ -4,6 +4,7 @@
   "description": "This repository **MUST** contain all coding assets to generate your team's wiki (HTML, CSS, JavaScript, TypeScript, Python, etc).",
   "main": "vite.config.js",
   "devDependencies": {
+    "gsap": "^3.11.2",
     "sass": "^1.54.9",
     "vite": "^3.1.3"
   },

@@ -1,30 +1,28 @@
 @import './variables'
-  
-html.has-scroll-smooth
-  overflow: hidden
 
-html.has-scroll-dragging
-  -webkit-user-select: none
-  -moz-user-select: none
-  -ms-user-select: none
-  user-select: none
-
-.has-scroll-smooth body
-  overflow: hidden
+html
+  &.has-scroll-smooth
+    overflow: hidden
+    body
+      overflow: hidden
+      [data-scroll-container]
+        min-height: 100vh
+        perspective: 1px
+  &.has-scroll-dragging
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+[data-scroll-direction='horizontal']
   [data-scroll-container]
-    min-height: 100vh
-    perspective: 1px
-
-[data-scroll-direction='horizontal'] [data-scroll-container]
-  height: 100vh
-  display: inline-block
-  white-space: nowrap
-
-[data-scroll-direction='horizontal'] [data-scroll-section]
-  display: inline-block
-  vertical-align: top
-  white-space: nowrap
-  height: 100%
+    height: 100vh
+    display: inline-block
+    white-space: nowrap
+  [data-scroll-section]
+    display: inline-block
+    vertical-align: top
+    white-space: nowrap
+    height: 100%
 
 .c-scrollbar
   position: absolute
@@ -35,7 +33,7 @@ html.has-scroll-dragging
   transform-origin: center right
   transition: transform 0.3s, opacity 0.3s
   opacity: 0
-
+  z-index: 9999
 
   &:hover
     transform: scaleX(1.45)
@@ -45,15 +43,15 @@ html.has-scroll-dragging
 .has-scroll-dragging .c-scrollbar
   opacity: 1
 
-[data-scroll-direction='horizontal'] .c-scrollbar
-  width: 100%
-  height: 10px
-  top: auto
-  bottom: 0
-  transform: scaleY(1)
-
-[data-scroll-direction='horizontal'] .c-scrollbar:hover
-  transform: scaleY(1.3)
+[data-scroll-direction='horizontal']
+  .c-scrollbar
+    width: 100%
+    height: 10px
+    top: auto
+    bottom: 0
+    transform: scaleY(1)
+    &:hover
+      transform: scaleY(1.3)
 
 .c-scrollbar_thumb
   position: absolute
@@ -67,11 +65,9 @@ html.has-scroll-dragging
   cursor: -webkit-grab
   cursor: grab
 
-
   .has-scroll-dragging &
     cursor: -webkit-grabbing
     cursor: grabbing
-
 
   [data-scroll-direction='horizontal'] &
     right: auto

@@ -2,9 +2,7 @@
 - [ ] Make layouts responsive
 - [ ] Correctly italicize all contentz2q
 - [ ] Try sticking in frameworkless web components
-
-### In Progress
-- [ ] Improve table of contents - h2
+- [ ] Change link design to buttons (translucent bg)
 
 ### Done ✓
 - [X] Content: Locomotive reveal on scroll

@@ -2,8 +2,8 @@
 @import './fonts'
 
 ::selection
-    background: $color-accent
-    color: $color-background
+    background: $color-highlight
+    color: $color-accent
 
 :root
     --font-size: 1.8rem
@@ -14,7 +14,8 @@ html
     font-size: 62.5%
 
 body
-    background: $color-background
+    background-color: $color-background
+    background-image: url('/static/assets/img/texture.png')
     color: $color-text
     font-family: $font-family
     margin: 0
@@ -41,6 +42,7 @@ h2
 p
     margin: 0
     font-size: 1.8rem
+    color: $color-text-secondary
 
 a
     color: $color-text
@@ -71,7 +73,7 @@ nav
     z-index: 999
     justify-content: flex-end
     transition: all .3s ease
-    
+
     &.filled
         background: $color-background
         border-bottom: 1px solid $color-text
@@ -84,37 +86,35 @@ nav
         & > li
             display: inline-flex
             font-size: 1.6rem
-            margin-right: 8rem
+            margin-right: 6.8rem
             position: relative
 
             a, span
                 cursor: pointer
                 transition: all .2s ease
             & a:hover
-                color: $color-text-light
+                color: $color-text
             & span:hover
-                color: $color-text-light
+                color: $color-text
 
-                // [name="chevron-down-outline"]
-                //     color: $color-accent
+                [name="chevron-down-outline"]
+                    color: $color-accent
 
             span
                 display: table-cell
                 vertical-align: middle
 
                 [name="chevron-down-outline"]
-                    color: $color-accent
+                    // color: $color-accent
                     font-size: 1.2rem
-                    margin-left: .8rem
+                    margin-left: .6rem
                     transition: all .2s ease
-
-                    // display: none
 
             .submenu
                 z-index: 999
                 position: absolute
                 top: 4.8rem
-                background: $color-text-light
+                background: $color-text-solid
                 list-style: none
                 padding: 2rem 2.8rem
                 display: flex
@@ -183,7 +183,7 @@ nav
             padding: 10rem 0
 
         span
-            opacity: 0.7
+            color: $color-text-secondary
             text-transform: uppercase
             font-weight: 700
             font-size: 1.2rem
@@ -288,12 +288,12 @@ nav
                         fill: $color-text
 
                     a
+                        color: $color-text
                         margin-left: 0.8rem
                         position: relative
                         display: inline-block
                         position: relative
                         line-height: 1
-                        color: inherit
                         div
                             overflow: hidden
                             &:first-child

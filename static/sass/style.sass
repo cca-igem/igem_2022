@@ -66,13 +66,15 @@ footer
 nav
     width: 100%
     position: absolute
-    background: $color-background
-    border-bottom: 1px solid $color-text
     padding: 2rem 0
     display: flex
     z-index: 999
     justify-content: flex-end
     transition: all .3s ease
+    
+    &.filled
+        background: $color-background
+        border-bottom: 1px solid $color-text
 
     & > ul
         list-style: none
@@ -93,14 +95,15 @@ nav
             & span:hover
                 color: $color-text-light
 
-                [name="chevron-down-outline"]
-                    color: $color-accent
+                // [name="chevron-down-outline"]
+                //     color: $color-accent
 
             span
                 display: table-cell
                 vertical-align: middle
 
                 [name="chevron-down-outline"]
+                    color: $color-accent
                     font-size: 1.2rem
                     margin-left: .8rem
                     transition: all .2s ease
@@ -110,7 +113,7 @@ nav
             .submenu
                 z-index: 999
                 position: absolute
-                top: 5.6rem
+                top: 4.8rem
                 background: $color-text-light
                 list-style: none
                 padding: 2rem 2.8rem
@@ -119,6 +122,7 @@ nav
                 border-radius: 3px
                 overflow: hidden
                 clip-path: inset(0 0 100% 0)
+                box-shadow: 1px 1px 8px #000
                 transition: all .5s ease
 
                 &.open
@@ -137,8 +141,8 @@ nav
 ///////// WIKI ////////////
 .hero
     color: $color-text
-    height: 40vh
-    margin-top: calc(4rem + 1em)
+    height: 70vh
+    // margin-top: calc(4rem + 1em)
     position: relative
     overflow: hidden
 

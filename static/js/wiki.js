@@ -5,6 +5,11 @@ window.addEventListener('load', () => {
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
   });
+  let nav = document.querySelector('nav');
+
+  scroll.on('scroll', (instance) => {
+    instance.scroll.y > 60 ? nav.classList.add('filled') : nav.classList.remove('filled');
+  });
 
   let ul = document.querySelector('#sidebar ul');
 

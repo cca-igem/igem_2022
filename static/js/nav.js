@@ -1,5 +1,3 @@
-import gsap from 'gsap';
-
 let dropdowns = document.querySelectorAll('.dropdown');
 let submenus = document.querySelectorAll('.submenu');
 

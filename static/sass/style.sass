@@ -68,26 +68,29 @@ footer
 nav
     width: 100%
     position: absolute
-    padding: 2rem 0
+    height: 8rem
     display: flex
     z-index: 999
     justify-content: flex-end
-    transition: all .3s ease
+    transition: all .2s ease
 
     &.filled
         background: $color-background
-        border-bottom: 1px solid $color-text
+        border-bottom: 1px solid grey
 
     & > ul
         list-style: none
         padding: 0
         margin: 0
+        display: flex
+        align-items: center
 
         & > li
             display: inline-flex
             font-size: 1.6rem
             margin-right: 6.8rem
             position: relative
+            line-height: 1.6
 
             a, span
                 cursor: pointer
@@ -237,7 +240,7 @@ nav
         margin: 5rem 0
         transform: scaleX(0)
         transition: transform .6s cubic-bezier(.215,.61,.355,1)
-        background: $color-text
+        background: grey
         &.is-inview
             transform: scaleX(1)
 
@@ -248,6 +251,7 @@ nav
             iframe
                 width: 100%
                 height: 80rem
+                border-radius: 10px
                 // border: 2px solid $color-text
                 opacity: 0
                 transform: translateY(7rem)
@@ -275,7 +279,7 @@ nav
             p
                 flex: 7
                 // margin-left: 3rem
-                line-height: 1.8
+                line-height: 2
                 transition-delay: .1s
 
                 span.link-main
@@ -353,7 +357,7 @@ nav
                 height: 24rem
                 position: relative
                 background: #ccc
-                border-radius: 2px
+                border-radius: 10px
                 overflow: hidden
 
                 opacity: 0
@@ -376,7 +380,7 @@ nav
                 display: flex
                 align-items: center
                 video
-                    border-radius: 2px
+                    border-radius: 10px
                     width: 100%
                     opacity: 0
                     transform: rotate(1.5deg) translateY(5rem)

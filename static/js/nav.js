@@ -24,11 +24,3 @@ dropdowns.forEach((el) =>
     }
   })
 );
-
-let nav = document.querySelector('nav');
-let prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-  let currentScrollPos = window.pageYOffset;
-  prevScrollpos > currentScrollPos ? (nav.style.top = '0') : (nav.style.top = '-calc(4rem + 1em)');
-  prevScrollpos = currentScrollPos;
-};

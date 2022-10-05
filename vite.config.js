@@ -12,7 +12,7 @@ module.exports = defineConfig({
         description: './wiki/description.html',
         education: './wiki/education.html',
         engineering: './wiki/engineering.html',
-        entrepeneurship: './wiki/entrepeneurship.html',
+        entrepreneurship: './wiki/entrepreneurship.html',
         experiments: './wiki/experiments.html',
         hardware: './wiki/hardware.html',
         humanPractices: './wiki/human-practices.html',

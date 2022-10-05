@@ -220,7 +220,6 @@ nav
             .gradient-anim-fill
                 background: $gradient-blue-anim
                 background-size: 300%
-                font-weight: 900
                 letter-spacing: -5px
                 text-transform: uppercase
                 -webkit-background-clip: text
@@ -233,14 +232,6 @@ nav
             color: $color-text
             font-family: $font-family
             font-size: 2rem
-
-@keyframes animated_text
-    0%
-        background-position: 0px 50%
-    50%
-        background-position: 100% 50%
-    100%
-        background-position: 0px 50%
 
 .animation-wrapper
     margin: 14rem 0
@@ -266,6 +257,7 @@ nav
                         &.is-inview
                             opacity: 1
                             transform: translateY(0)
+
 
                 &-anim
                     display: flex
@@ -298,14 +290,6 @@ nav
                                 animation: pill 3s ease-in-out infinite
                                 -moz-animation: pill 3s ease-in-out infinite
                                 -webkit-animation: pill 3s ease-in-out infinite
-
-@keyframes pill
-    0%
-        transform: translateY(0)
-    60%
-        transform: translateY(75%)
-    100%
-        transform: translateY(75%)
 
 .content
     display: flex
@@ -482,3 +466,44 @@ nav
                     &.is-inview
                         opacity: 1
                         transform: none
+
+@keyframes animated_text
+    0%
+        background-position: 0px 50%
+    50%
+        background-position: 100% 50%
+    100%
+        background-position: 0px 50%
+
+@keyframes pill
+    0%
+        transform: translateY(0)
+    60%
+        transform: translateY(75%)
+    100%
+        transform: translateY(75%)
+
+@keyframes star1_rotate
+    0%
+        transform: rotate(0)
+    100%
+        transform: rotate(360deg)
+
+@keyframes star2_growth
+    0%
+        transform: scale(0.9)
+
+    50%
+        transform: scale(1.1)
+    100%
+        transform: scale(0.9)
+
+@keyframes spark1_float
+    0%
+        transform: translate(1rem, 1rem)
+
+    50%
+        transform: translate(-1rem, -1rem)
+
+    100%
+        transform: translate(1rem, 1rem)

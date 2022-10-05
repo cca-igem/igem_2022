@@ -67,7 +67,13 @@
           </h4>
         </div>
         <img class="img-bg img-bg-ultrawide" src="/static/assets/img/ultrawide.png" data-scroll />
-        <img src="/static/assets/img/spark1.svg" class="img-bg" style="left: 3vw; top: 10vh" data-scroll data-scroll-speed="-1" />
+        <img
+          src="/static/assets/img/spark1.svg"
+          class="img-bg"
+          style="left: 3vw; top: 10vh; animation: spark1_float 10s ease infinite"
+          data-scroll
+          data-scroll-speed="-1"
+        />
         <img
           src="/static/assets/img/snail-pink.png"
           class="img-bg"
@@ -75,7 +81,13 @@
           data-scroll
           data-scroll-speed="0.5"
         />
-        <img src="/static/assets/img/star1.svg" class="img-bg" style="bottom: 16vh; left: 6vw; width: 7rem" data-scroll data-scroll-speed="-0.5" />
+        <img
+          src="/static/assets/img/star1.svg"
+          class="img-bg"
+          style="bottom: 16vh; left: 6vw; width: 7rem; animation: star1_rotate 10s linear infinite"
+          data-scroll
+          data-scroll-speed="-0.5"
+        />
         <img
           src="/static/assets/img/snail-blue.png"
           class="img-bg"
@@ -83,7 +95,13 @@
           data-scroll
           data-scroll-speed="0.5"
         />
-        <img src="/static/assets/img/star2.svg" class="img-bg" style="bottom: 30vh; right: 9vw; width: 10rem" data-scroll data-scroll-speed="-0.5" />
+        <img
+          src="/static/assets/img/star2.svg"
+          class="img-bg"
+          style="bottom: 30vh; right: 9vw; width: 10rem; animation: star2_growth 5s ease-in-out infinite"
+          data-scroll
+          data-scroll-speed="-0.5"
+        />
       </div>
       <div class="wrapper animation-wrapper">
         <div class="container cols" data-scroll-section>
@@ -107,8 +125,8 @@
         <div class="container cols" data-scroll-section>
           <div class="content-box">
             <p data-scroll data-scroll-offset="50">
-              Currently, only one primary treatment for this disease exists&mdash;praziquantel. Unfortunately, due to a lack of accessible healthcare
-              in third-world countries, it often reaches schistosomiasis patients too late.
+              Currently, only one primary treatment for this disease exists&mdash;<span class="highlight">praziquantel</span>. Unfortunately, due to a
+              lack of accessible healthcare in third-world countries, it often reaches schistosomiasis patients too late.
             </p>
           </div>
           <div class="content-anim">

@@ -5,7 +5,6 @@ module.exports = defineConfig({
     rollupOptions: {
       input: {
         home: './index.html',
-        
         attributions: './wiki/attributions.html',
         collaborations: './wiki/collaborations.html',
         communication: './wiki/communication.html',

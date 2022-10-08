@@ -193,23 +193,23 @@ nav
         h1
             font-size: 4.8rem
 
+.img-bg
+    position: absolute
+    pointer-events: none
+    user-select: none
+    z-index: -20
+
+    &-ultrawide
+        top: -58vh
+        left: calc(75vw - 200vh)
+        max-width: 275vh
+        height: auto
+        width: 300vw
+
 .landing-hero
     height: 100vh
     display: flex
     position: relative
-
-    .img-bg
-        position: absolute
-        pointer-events: none
-        user-select: none
-        z-index: -20
-
-        &-ultrawide
-            top: -58vh
-            left: calc(75vw - 200vh)
-            max-width: 275vh
-            height: auto
-            width: 300vw
 
     .text
 
@@ -236,7 +236,7 @@ nav
 .animation-wrapper
     margin: 14rem 0
     .container
-        width: 70%
+        width: calc(100% * 2 / 3)
         &.cols
             display: flex
             height: 80vh
@@ -258,7 +258,6 @@ nav
                             opacity: 1
                             transform: translateY(0)
 
-
                 &-anim
                     display: flex
                     flex: 1
@@ -278,18 +277,6 @@ nav
                         &.is-inview
                             opacity: 1
                             transform: translateY(0)
-
-                        .superimp
-                            position: absolute
-
-                            &-pill
-                                top: 0
-                                left: 2vw
-                                width: 30rem
-                                z-index: -1
-                                animation: pill 3s ease-in-out infinite
-                                -moz-animation: pill 3s ease-in-out infinite
-                                -webkit-animation: pill 3s ease-in-out infinite
 
 .content
     display: flex

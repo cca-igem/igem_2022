@@ -1,35 +1,390 @@
-{% extends "layout.html" %}
-  
-{% block title %}Education{% endblock %}
-{% block lead %}Innovative educational tools and outreach activities have the ability to establish a two-way dialogue with new communities by discussing public values and the science behind synthetic biology.{% endblock %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/sass/style.sass" />
+    <link rel="stylesheet" href="/static/sass/locomotive-scroll.sass" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <span class="dropdown">Team <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="/wiki/team.html">Team Page</a></li>
+            <li><a href="/wiki/attributions.html">Attributions</a></li>
+            <li><a href="/wiki/collaborations.html">Collaborations</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="dropdown">Project <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="/wiki/communication.html">Communication</a></li>
+            <li><a href="/wiki/contribution.html">Contribution</a></li>
+            <li><a href="/wiki/description.html">Description</a></li>
+            <li><a href="/wiki/engineering.html">Engineering</a></li>
+            <li><a href="/wiki/experiments.html">Experiments</a></li>
+            <li><a href="/wiki/implementation.html">Implementation</a></li>
+            <li><a href="/wiki/notebook.html">Notebook</a></li>
+            <li><a href="/wiki/partnership.html">Partnership</a></li>
+            <li><a href="/wiki/proof-of-concept.html">Proof Of Concept</a></li>
+            <li><a href="/wiki/results.html">Results</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="dropdown">Parts <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="/wiki/part-collection.html">Part Collection</a></li>
+            <li><a href="/wiki/parts.html">Parts</a></li>
+            <li><a href="/wiki/improve.html">Improve</a></li>
+          </ul>
+        </li>
+        <li><a href="/wiki/safety.html">Safety</a></li>
+        <li>
+          <span class="dropdown">Awards <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="/wiki/education.html">Education</a></li>
+            <li><a href="/wiki/entrepreneurship.html">Contribution</a></li>
+            <li><a href="/wiki/hardware.html">Hardware</a></li>
+            <li><a href="/wiki/inclusivity.html">Inclusivity</a></li>
+            <li><a href="/wiki/measurement.html">Measurement</a></li>
+            <li><a href="/wiki/model.html">Model</a></li>
+            <li><a href="/wiki/plant.html">Plant</a></li>
+            <li><a href="/wiki/software.html">Software</a></li>
+            <li><a href="/wiki/sustainable.html">Sustainability</a></li>
+          </ul>
+        </li>
+        <li><a href="/wiki/human-practices.html">Human Practices</a></li>
+      </ul>
+    </nav>
+    <div id="smooth-wrapper" data-scroll-container>
+      <div class="wrapper hero" data-scroll-section>
+        <div class="hero-inner" data-scroll data-scroll-speed="-1" data-scroll-position="top"></div>
+        <div class="text">
+          <h1>Education</h1>
+        </div>
+      </div>
+      <div class="container content" id="fixed-wrapper">
+        <div class="content-inner">
+          <div class="project" data-scroll-section>
+            <div class="header">
+              <h1 data-scroll>Summer Camp</h1>
+              <span data-scroll>June 2022 - August 2022</span>
+            </div>
+            <div class="divider" data-scroll data-scroll-offset="50"></div>
+            <div class="container-text">
+              <h2 data-scroll>Introduction</h2>
+              <p data-scroll>
+                Over the summer, our team hosted a STEM summer camp that encompassed biology, chemistry, synthetic biology, and forensics. We held two
+                one-week sessions, and a total of 25 students attended. We wanted to hold our camp at the lab classrooms of our school so that
+                students would have a more hands-on experience and learn more. Most of our students were in middle school, or between the ages of
+                11-14.
+                <br /><br />
+                <a href="https://www.ccaigemcamp.com" target="_blank">
+                  <span class="link-main">
+                    Visit site
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </span>
+                </a>
+              </p>
+            </div>
+            <div class="container-img container-img-two">
+              <div class="img-box" data-scroll>
+                <div
+                  class="img"
+                  style="background-image: url(https://static.igem.wiki/teams/4261/wiki/dsc-0677.jpg); background-position: 50% 40%"
+                ></div>
+              </div>
+              <div class="img-box" data-scroll>
+                <div class="img" style="background-image: url(/static/assets/img/DSC_0723.JPG); background-position: 50% 45%"></div>
+              </div>
+            </div>
 
-{% block page_content %}
+            <div class="container-text">
+              <h2 data-scroll>Curriculum</h2>
+              <p data-scroll>
+                We designed all of our curriculum for our camp, based around four subjects: Biology, Chemistry, Synthetic Biology, and Forensics.
+                Since our main demographic was middle schoolers interested in science, we aimed for a 9th-10th grade level of difficulty, especially
+                in biology and chemistry. We wanted to cover biology and chemistry in the first two days because it would be essential for
+                understanding synthetic biology and forensics, two subjects that aren't taught in school.
+                <br /><br />
+                Every day, we had several slide decks covering crucial topics for each subject. For instance, in chemistry, we'd have a separate
+                lecture for the periodic table, matter, chemical reactions, and density. We also incorporated a few labs in between each lecture to
+                reinforce the topics. Our slides were engaging and fun, with videos and simulations so that the students wouldn't get bored. We also
+                had a participation point system with quiz questions for each slide deck, and the student with the most points received a gift card at
+                the end of the week.
+              </p>
+            </div>
+            <div class="container-img">
+              <div class="img-box" data-scroll>
+                <div
+                  class="img"
+                  style="background-image: url(https://static.igem.wiki/teams/4261/wiki/dsc-0808.jpg); background-position: 50% 35%"
+                ></div>
+              </div>
+            </div>
 
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Best Education Special Prize</h4>
-      <p>How have you developed new opportunities to include more people in shaping synthetic biology? Innovative educational tools and outreach activities have the ability to establish a two-way dialogue with new communities by discussing public values and the science behind synthetic biology. Document your approach and what was learned by everyone involved to compete for this award.</p>
-      <p>To compete for the Best Education Prize, please describe your work on this page  and also fill out the description on the <a href="https://competition.igem.org/deliverables/judging-form">judging form</a>.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/awards">2022 Awards Page</a> for more information.</p>
+            <div class="container-text">
+              <h2 data-scroll>Labs</h2>
+              <p data-scroll>
+                We organized two to three labs each day. They reinforced what students learned during the lectures so that they could understand and
+                visualize it better. We had a few simple labs such as strawberry DNA extraction and leaf chad photosynthesis, but we had quite a few
+                complex labs as well. For example, for the synthetic biology portion, the students performed a bacterial transformation, putting GFP
+                genes into e. Coli. Another advanced lab that we did measured how different factors, such as surface area, concentration, and
+                temperatures, can affect the rate of chemical reactions.
+                <br /><br />
+                We made sure students were adequately prepared for each lab. We did a presentation about lab safety and etiquette, and proper
+                consequences were reinforced for those who did not follow the safety procedures. Most of our students were pretty mature, so it wasn't
+                a problem throughout both sessions.
+              </p>
+            </div>
+            <div class="container-img container-img-two">
+              <div class="img-box" data-scroll>
+                <div
+                  class="img"
+                  style="background-image: url(https://static.igem.wiki/teams/4261/wiki/dsc-0843.jpg); background-position: 50% 40%"
+                ></div>
+              </div>
+              <div class="img-box" data-scroll>
+                <div
+                  class="img"
+                  style="background-image: url(https://static.igem.wiki/teams/4261/wiki/dsc-0723.jpg); background-position: 50% 45%"
+                ></div>
+              </div>
+              <div class="img-box" data-scroll>
+                <div
+                  class="img"
+                  style="background-image: url(https://static.igem.wiki/teams/4261/wiki/dsc-0838.jpg); background-position: 50% 45%"
+                ></div>
+              </div>
+              <div class="img-box" data-scroll>
+                <div
+                  class="img"
+                  style="background-image: url(https://static.igem.wiki/teams/4261/wiki/dsc-0776.jpg); background-position: 50% 45%"
+                ></div>
+              </div>
+            </div>
+            <div class="container-text">
+              <h2 data-scroll>Survey Analysis</h2>
+              <p data-scroll>
+                We had the students take a survey both before and after the camp in order to gauge how much they learned and benefitted from our camp.
+                We had quiz questions about each of the topics taught, and the students tested their knowledge on the topics on the first and last
+                day. Additionally, at the end, the students evaluated factors such as how much they paid attention and how much they thought they
+                learned. <br /><br />
+                Overall, students generally answered 7.5/10 on how much they felt they learned, and a 7.36/10 on how much they paid attention. The
+                high scores for engagement reflect the increase in average quiz score. The "after" quiz score was 1.23 points higher than the "before"
+                quiz score, with the total being out of 9.
+              </p>
+            </div>
+
+            <div class="container-doc">
+              <iframe src="https://static.igem.wiki/teams/4261/wiki/camp-analysis.pdf" data-scroll></iframe>
+            </div>
+          </div>
+          <div class="spacer"></div>
+          <div class="project" data-scroll-section>
+            <div class="header">
+              <h1 data-scroll>Bacteria Book</h1>
+              <span data-scroll>June 2022 - August 2022</span>
+            </div>
+            <div class="divider" data-scroll data-scroll-offset="50"></div>
+            <div class="container-text">
+              <h2 data-scroll>Introduction</h2>
+              <p data-scroll>
+                We created a 41-page book, <em>Introduction to Bacteria</em>, in order to provide a resource for understanding a critical domain of
+                organisms. This included coverage on bacteria anatomy, classification, identification, functions, and applicability in synthetic
+                biology and scientific study: our book's content is aligned with the Next Generation Science Standards (NGSS), ensuring its modernity
+                and applicability in an educational environment. The book was created with the objective of providing a collective of relevant,
+                well-rounded information for advanced middle school to college students to utilize. We intend on publishing our book through Amazon
+                KDP, offering our book free of charge in order to achieve our objectives for the book's outreach to everyone.
+              </p>
+            </div>
+
+            <div class="container-text">
+              <h2 data-scroll>Translations &amp; Audiobook</h2>
+              <p data-scroll>
+                In order to extend our book's reach to a larger audience, we created translations of our book in Chinese, French, Korean, and Spanish.
+                This enhances the accessibility of our book, especially to countries where access to STEM education may be limited by linguistic
+                barriers. In an effort to ensure accessibility is considered in as many areas as possible, we also recorded an audio version of our
+                book for auditory learners and individuals with certain impediments.
+                <br /><br />
+                <a href="https://linktr.ee/ccaigem2022" target="_blank">
+                  <span class="link-main">
+                    View translations
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </span>
+                </a>
+              </p>
+            </div>
+
+            <div class="container-doc">
+              <iframe src="https://static.igem.wiki/teams/4261/wiki/igem-book-3.pdf" data-scroll></iframe>
+            </div>
+          </div>
+          <div class="spacer"></div>
+          <div class="project" data-scroll-section>
+            <div class="header">
+              <h1 data-scroll>Children's Book</h1>
+              <span data-scroll>July 2022 - October 2022</span>
+            </div>
+            <div class="divider" data-scroll data-scroll-offset="50"></div>
+            <div class="container-text">
+              <h2 data-scroll>Summary</h2>
+              <p data-scroll>
+                We wrote a children's book to educate the younger audience on overlooked and underrepresented contributors to scientific advancements
+                such as scientists of the female gender and various ethnicities. We used straightforward, uncomplicated language and drawings of the
+                mentioned scientists as snails&mdash;which connects to our main iGEM project on schistosomiasis&mdash;to make the information easier
+                for children to understand. We diversified the age group of our audience by writing this children's book.
+              </p>
+            </div>
+
+            <div class="container-doc">
+              <iframe src="https://static.igem.wiki/teams/4261/wiki/cca-igem-book-min.pdf" data-scroll></iframe>
+            </div>
+            <div class="container-text">
+              <h2 data-scroll>Worksheet</h2>
+              <p data-scroll>
+                We also made a worksheet for young science students to fill out after reading the book. We included engaging questions to get future
+                scientists thinking about what they could be in the future. Because we made this book in hopes of introducing new fields to younger
+                kids, we expect the worksheet will also serve the same purpose.
+              </p>
+            </div>
+
+            <div class="container-doc">
+              <iframe src="https://static.igem.wiki/teams/4261/wiki/children-s-book-worksheet.pdf" data-scroll></iframe>
+            </div>
+          </div>
+          <div class="spacer"></div>
+          <div class="project" data-scroll-section>
+            <div class="header">
+              <h1 data-scroll>Schistosomiasis Website</h1>
+              <span data-scroll>August 2022</span>
+            </div>
+            <div class="divider" data-scroll data-scroll-offset="50"></div>
+            <div class="container-text">
+              <h2 data-scroll>Summary</h2>
+              <p data-scroll>
+                Since schistosomiasis is a disease most commonly found in third world countries, not much research is done on the subject, and
+                information on symptoms and treatments is inaccessible to many. Because of this, we created a website with easily accessible
+                information about schistosomiasis. It contains a brief overview of the disease itself, including the disease's origin, how it is
+                contracted, and current diagnosis methods and treatments. The website also details how the disease is spread, the most common
+                symptoms, and the long-lasting impact of the illness on the human body. Through this website, we hope to raise awareness on
+                schistosomiasis and educate a wider audience on its symptoms and treatments.
+                <br /><br />
+                <a href="https://schistosomiasis-psa.vercel.app" target="_blank">
+                  <span class="link-main"
+                    >Visit site
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="spacer"></div>
+
+          <div class="project" data-scroll-section>
+            <div class="header">
+              <h1 data-scroll>YouTube Channel</h1>
+              <span data-scroll>August 2022 - September 2022</span>
+            </div>
+            <div class="divider" data-scroll data-scroll-offset="50"></div>
+            <div class="container-text">
+              <h2 data-scroll>Summary</h2>
+              <p data-scroll>
+                We developed a YouTube channel that provided comprehensive lectures on biology and bioinformatics that helped students of all
+                backgrounds learn more about what we do and the beauty of science. Clear, high-quality, and well-organized&mdash;we provided it for
+                free for the goal of reaching those underrepresented and less-privileged in order to inspire them and provide all students with equal
+                education.
+                <br /><br />
+                <a href="https://www.youtube.com/channel/UCoX2BzXOV9Gv19_IpKymPLQ/" target="_blank">
+                  <span class="link-main"
+                    >View channel
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </span>
+                </a>
+              </p>
+            </div>
+            <div class="container-text">
+              <h2 data-scroll>Lambert X CCA Collab</h2>
+              <p data-scroll>
+                With Lambert, we were also able to produce a lab safety video to educate those interested in synthetic biology. We used equipment such
+                as hot plates, pipettes, microscopes, and centrifuges which all require some precautions for safe use, as well as basic safety
+                protocols like bleaching. We hope this video will be a helpful contribution for future iGEM teams who do not have lab experience yet,
+                or even anyone interested in conducting research.
+              </p>
+            </div>
+          </div>
+          <div class="spacer"></div>
+          <div class="project" data-scroll-section>
+            <div class="header">
+              <h1 data-scroll>Research Ethics Symposium</h1>
+              <span data-scroll>July 2022 - October 2022</span>
+            </div>
+            <div class="divider" data-scroll data-scroll-offset="50"></div>
+            <div class="container-text">
+              <h2 data-scroll>Summary</h2>
+              <p data-scroll>
+                On October 3rd, as a collaboration, our iGEM team, DNHS, and WVHS held an ethics symposium at the J. Craig Venter Institute. Because
+                we saw that many people in our respective Human Practices surveys did not know much about synthetic biology ethics, we wanted to
+                educate the San Diego community of how ethical practices are maintained in research. We had an impressive lineup of iGEM members,
+                student researchers, and professional researchers give presentations about ethical issues in research today, and what ethical values
+                they uphold. It was an amazing opportunity to not only educate our peers and learn from experts, but also to meet each other in
+                person!
+              </p>
+            </div>
+
+            <div class="container-img container-img-two">
+              <div class="img-box" data-scroll>
+                <div
+                  class="img"
+                  style="
+                    background-image: url(https://static.igem.wiki/teams/4261/wiki/screen-shot-2022-10-07-at-10-36-37-pm.png);
+                    background-position: 50% 40%;
+                  "
+                ></div>
+              </div>
+              <div class="img-box" data-scroll>
+                <div
+                  class="img"
+                  style="
+                    background-image: url(https://static.igem.wiki/teams/4261/wiki/screen-shot-2022-10-07-at-10-36-53-pm.png);
+                    background-position: 50% 45%;
+                  "
+                ></div>
+              </div>
+              <div class="img-box" data-scroll>
+                <div
+                  class="img"
+                  style="
+                    background-image: url(https://static.igem.wiki/teams/4261/wiki/screen-shot-2022-10-07-at-10-37-06-pm.png);
+                    background-position: 50% 45%;
+                  "
+                ></div>
+              </div>
+              <div class="img-box" data-scroll>
+                <div
+                  class="img"
+                  style="
+                    background-image: url(https://static.igem.wiki/teams/4261/wiki/screen-shot-2022-10-07-at-10-37-48-pm.png);
+                    background-position: 50% 45%;
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="spacer"></div>
+        </div>
+        <div class="sidebar" id="sidebar" data-scroll-section>
+          <div class="sidebar-inner" data-scroll data-scroll-sticky data-scroll-target="#sidebar">
+            <span>Jump To</span>
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+      <footer data-scroll-section></footer>
     </div>
-  </div>
-</div>
-
-<div class="row mt-4">
-  <div class="col">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2020.igem.org/Team:CCA_San_Diego/Education">2020 CCA San Diego</a></li>
-      <li><a href="https://2020.igem.org/Team:Lambert_GA/Education">2020 Lambert GA</a></li>
-      <li><a href="https://2020.igem.org/Team:Stanford/Education">2020 Stanford</a></li>
-      <li><a href="https://2020.igem.org/Team:Waseda/Education">2020 Waseda</a></li>
-      <li><a href="https://2020.igem.org/Team:Fudan/Education">2020 Fudan</a></li>
-      <li><a href="https://2020.igem.org/Team:Toulouse_INSA-UPS/Education">2020 Toulouse INSA UPS</a></li>
-    </ul>
-  </div>
-</div>
-
-{% endblock %}
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="/static/js/wiki.js"></script>
+    <script type="module" src="/static/js/nav.js"></script>
+  </body>
+</html>

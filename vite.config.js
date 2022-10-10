@@ -11,6 +11,7 @@ module.exports = defineConfig({
         communication: './wiki/communication.html',
         contribution: './wiki/contribution.html',
         description: './wiki/description.html',
+        design: './wiki/design.html',
         education: './wiki/education.html',
         engineering: './wiki/engineering.html',
         entrepreneurship: './wiki/entrepreneurship.html',

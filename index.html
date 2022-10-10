@@ -105,21 +105,37 @@
       </div>
       <div class="wrapper animation-wrapper">
         <div class="container cols" data-scroll-section>
-          <img class="img-bg" src="https://static.igem.wiki/teams/4261/wiki/landing-page/spark2.svg" style="left: -8vw" data-scroll />
           <div
             class="color"
             style="background: radial-gradient(circle farthest-side, #e455bc, transparent); opacity: 0.18; left: calc(100% + 20vw); top: -8vh"
             data-scroll
           ></div>
+          <div class="content-box centered">
+            <p data-scroll data-scroll-offset="150" data-scroll-call="animateCountUp(document.querySelector('#counter'))">
+              Schistosomiasis is a neglected waterborne parasitic disease that is common in third-world countries. It affects more than
+              <span class="emph"><span id="counter">240</span> million people</span> worldwide each year and causes symptoms such as fever, organ
+              failure, and eventual death if untreated.
+            </p>
+          </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="container cols" data-scroll-section>
+          <img class="img-bg" src="https://static.igem.wiki/teams/4261/wiki/landing-page/spark2.svg" style="left: -8vw" data-scroll />
           <div class="content-box">
-            <p data-scroll data-scroll-offset="50">
+            <p data-scroll data-scroll-offset="150">
               The disease is caused by the parasite
               <em>Schistosoma mansoni</em>, which invades freshwater snails as an intermediate host. Once it is grown, the parasite infects humans by
               penetration through the skin.
             </p>
           </div>
           <div class="content-anim">
-            <img src="https://static.igem.wiki/teams/4261/wiki/landing-page/wormenterssnail.png" class="drawing" data-scroll data-scroll-offset="50" data-scroll-speed="0.5" />
+            <img
+              src="https://static.igem.wiki/teams/4261/wiki/landing-page/wormenterssnail.png"
+              class="drawing"
+              data-scroll
+              data-scroll-offset="50"
+              data-scroll-speed="0.5"
+            />
           </div>
         </div>
         <div class="spacer"></div>
@@ -139,12 +155,40 @@
             ></lottie-player>
           </div>
           <div class="content-box">
-            <p data-scroll data-scroll-offset="50">
-              Currently, only one primary treatment for this disease exists&mdash;<span>praziquantel</span>. Unfortunately, due to a
-              lack of accessible healthcare in third-world countries, it often reaches schistosomiasis patients too late.
+            <p data-scroll data-scroll-offset="150">
+              Currently, only one viable treatment for this disease exists&mdash;<span class="emph">praziquantel</span>. Unfortunately, due to a lack
+              of accessible healthcare in third-world countries, it often reaches schistosomiasis patients too late.
             </p>
           </div>
         </div>
+        <div class="spacer"></div>
+        <div class="container cols" data-scroll-section>
+          <div
+            class="color"
+            style="background: radial-gradient(circle farthest-side, #5587e4, transparent); opacity: 0.18; left: -20vw; top: 10vh"
+            data-scroll
+          ></div>
+          <div class="content-box">
+            <p data-scroll data-scroll-offset="150">
+              Our solution, SchistoGONE, targets schistosomiasis before it even infects humans. A bioreactor cultivates yeast cells that produce
+              <span class="emph">sanguinarine</span>, a compound that is toxic to parasites but not other animals.
+            </p>
+          </div>
+          <div class="content-anim">
+            <lottie-player
+              class="drawing"
+              src="https://lottie.host/4e0f64cb-17fb-4202-8a84-58f7203f7f7f/hGyx12S0C1.json"
+              background="transparent"
+              speed="8"
+              loop
+              autoplay
+              data-scroll
+              data-scroll-speed="0.3"
+            ></lottie-player>
+          </div>
+        </div>
+
+        <div class="spacer"></div>
       </div>
       <footer data-scroll-section></footer>
     </div>

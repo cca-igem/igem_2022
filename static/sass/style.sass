@@ -44,6 +44,10 @@ p
     color: $color-text
     line-height: 2
 
+    .emph
+        color: $color-text-solid
+        font-weight: 700
+
     .highlight
         color: white
         --tw-opacity: .6
@@ -51,6 +55,9 @@ p
         border-radius: 5px
         padding: .4rem 1rem
         margin-right: .6rem
+
+        &.second
+            background: $gradient-red
 
     .subtext
         color: $color-text-secondary
@@ -261,6 +268,7 @@ nav
 
                     p
                         font-size: 2.4rem
+
                         line-height: 2
                         transform: translateY(5rem)
                         transition: $transition-fadeUp
@@ -269,6 +277,13 @@ nav
                         &.is-inview
                             opacity: 1
                             transform: translateY(0)
+
+                    &.centered
+                        flex-direction: column
+                        text-align: center
+                        justify-content: center
+                        p
+                            width: 80%
 
                 &-anim
                     display: flex
@@ -279,7 +294,7 @@ nav
                     .drawing
                         height: 40vh
                         transform: translateY(5rem)
-                        transition: all .2s ease
+                        transition: $transition-fadeUp
                         position: relative
                         opacity: 0
 
@@ -489,6 +504,9 @@ nav
                         margin-bottom: 5rem
                         font-family: $font-family
 
+                        &.tl-second
+                            background: $gradient-red
+
                     p
                         &.subtitle
                             color: $color-text-secondary
@@ -524,6 +542,10 @@ nav
                     border: 4px solid $color-accent
                     border-radius: 999px
                     background: #fff
+
+                &-second
+                    &::before
+                        border: 4px solid $color-accent-secondary
 
         &::before
             left: 3rem

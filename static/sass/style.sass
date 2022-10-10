@@ -25,7 +25,7 @@ body
 
 h1, h2, h3, h4, h5, h6
     margin: 0
-    font-weight: 400
+    font-weight: 700
     font-family: $font-family-heading
     color: $color-text-solid
 
@@ -82,6 +82,11 @@ footer
     height: 30rem
     width: 100%
     background: rgba(0,0,0,0.3)
+    position: relative
+    padding: 4rem 10vw
+
+    img#hut
+        height: 100%
 
 .color
     height: 100rem
@@ -234,7 +239,7 @@ nav
 
         h1
             font-weight: 700
-            font-size: 7.2rem
+            font-size: 8.4rem
 
             .gradient-anim-fill
                 background: $gradient-blue-anim
@@ -250,7 +255,13 @@ nav
         h4
             color: $color-text
             font-family: $font-family
-            font-size: 2rem
+            font-size: 2.6rem
+            font-weight: 400
+
+#wrap-counter
+    font-size: 10rem
+    margin-bottom: 5rem
+    font-weight: 700
 
 .animation-wrapper
     margin: 14rem 0
@@ -268,7 +279,6 @@ nav
 
                     p
                         font-size: 2.4rem
-
                         line-height: 2
                         transform: translateY(5rem)
                         transition: $transition-fadeUp
@@ -283,7 +293,43 @@ nav
                         text-align: center
                         justify-content: center
                         p
-                            width: 80%
+                            margin: 3rem 0
+                            width: 70%
+
+                        lottie-player
+                            height: 30rem
+                            transform: translateY(5rem)
+                            transition: $transition-fadeUp
+                            opacity: 0
+
+                            &.is-inview
+                                opacity: 1
+                                transform: translateY(0)
+
+                        a
+                            transform: translateY(5rem)
+                            transition: $transition-fadeUp
+                            opacity: 0
+
+                            &.is-inview
+                                opacity: 1
+                                transform: translateY(0)
+                                
+                            button
+                                cursor: pointer
+                                border-radius: 999px
+                                padding: 1.2rem 2.4rem
+                                --tw-opacity: .8
+                                background: $gradient-blue
+                                border: 1px solid $color-text
+                                font-family: $font-family
+                                font-size: 2rem
+                                color: #fff
+                                line-height: 1em
+
+                                & ion-icon
+                                    vertical-align: middle
+                                    margin-left: .5rem
 
                 &-anim
                     display: flex
@@ -293,17 +339,42 @@ nav
 
                     .drawing
                         height: 40vh
+                        position: relative
                         transform: translateY(5rem)
                         transition: $transition-fadeUp
-                        position: relative
                         opacity: 0
-
-                        &-inner
-                            height: 100%
 
                         &.is-inview
                             opacity: 1
                             transform: translateY(0)
+
+                        &-inner
+                            height: 100%
+.container-promo
+    margin: 12rem 0
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    h1
+        font-family: $font-family
+        font-weight: 700
+
+    img
+        margin: 5rem 0
+        transform: rotate(-20deg)
+
+    iframe
+        width: 50vw
+        height: calc(50vw * 9 / 16)
+        border-radius: 1rem
+        transform: translateY(5rem)
+        transition: $transition-fadeUp
+        opacity: 0
+
+        &.is-inview
+            opacity: 1
+            transform: translateY(0)
 
 .content
     display: flex

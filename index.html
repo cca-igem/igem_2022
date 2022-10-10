@@ -19,42 +19,40 @@
         <li>
           <span class="dropdown">Project <ion-icon name="chevron-down-outline"></ion-icon></span>
           <ul class="submenu">
-            <li><a href="./wiki/communication.html">Communication</a></li>
             <li><a href="./wiki/contribution.html">Contribution</a></li>
             <li><a href="./wiki/description.html">Description</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="dropdown">Lab <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="./wiki/design.html">Design</a></li>
             <li><a href="./wiki/engineering.html">Engineering</a></li>
             <li><a href="./wiki/experiments.html">Experiments</a></li>
-            <li><a href="./wiki/implementation.html">Implementation</a></li>
             <li><a href="./wiki/notebook.html">Notebook</a></li>
-            <li><a href="./wiki/partnership.html">Partnership</a></li>
             <li><a href="./wiki/proof-of-concept.html">Proof Of Concept</a></li>
             <li><a href="./wiki/results.html">Results</a></li>
-          </ul>
-        </li>
-        <li>
-          <span class="dropdown">Parts <ion-icon name="chevron-down-outline"></ion-icon></span>
-          <ul class="submenu">
-            <li><a href="./wiki/part-collection.html">Part Collection</a></li>
             <li><a href="./wiki/parts.html">Parts</a></li>
-            <li><a href="./wiki/improve.html">Improve</a></li>
+            <li><a href="./wiki/safety.html">Safety</a></li>
+            <li><a href="./wiki/hardware.html">Hardware</a></li>
           </ul>
         </li>
-        <li><a href="./wiki/safety.html">Safety</a></li>
         <li>
-          <span class="dropdown">Awards <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <span class="dropdown">Human Practices <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="./wiki/implementation.html">Proposed Implementation</a></li>
+            <li><a href="./wiki/human-practices.html">Human Practices</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="dropdown">Scicomm <ion-icon name="chevron-down-outline"></ion-icon></span>
           <ul class="submenu">
             <li><a href="./wiki/education.html">Education</a></li>
-            <li><a href="./wiki/entrepreneurship.html">Contribution</a></li>
-            <li><a href="./wiki/hardware.html">Hardware</a></li>
-            <li><a href="./wiki/inclusivity.html">Inclusivity</a></li>
-            <li><a href="./wiki/measurement.html">Measurement</a></li>
-            <li><a href="./wiki/model.html">Model</a></li>
-            <li><a href="./wiki/plant.html">Plant</a></li>
-            <li><a href="./wiki/software.html">Software</a></li>
-            <li><a href="./wiki/sustainable.html">Sustainability</a></li>
+            <li><a href="./wiki/communication.html">Communication</a></li>
+            <li><a href="./wiki/partnership.html">Partnership</a></li>
           </ul>
         </li>
-        <li><a href="./wiki/human-practices.html">Human Practices</a></li>
+        <li><a href="./wiki/model.html">Modeling</a></li>
       </ul>
     </nav>
     <div id="smooth-wrapper" data-scroll-container>
@@ -111,10 +109,12 @@
             data-scroll
           ></div>
           <div class="content-box centered">
-            <p data-scroll data-scroll-offset="150" data-scroll-call="animateCountUp(document.querySelector('#counter'))">
-              Schistosomiasis is a neglected waterborne parasitic disease that is common in third-world countries. It affects more than
-              <span class="emph"><span id="counter">240</span> million people</span> worldwide each year and causes symptoms such as fever, organ
-              failure, and eventual death if untreated.
+            <h1 data-scroll data-scroll-call="animateCountUp(document.querySelector('#counter'))" id="wrap-counter">
+              <span id="counter">240</span>,000,000
+            </h1>
+            <p data-scroll data-scroll-offset="150">
+              That's how many people are afflicted each year with schistosomiasis, a neglected waterborne parasitic disease that is common in
+              third-world countries. If left untreated, it can cause symptoms such as fever, organ failure, and eventual death.
             </p>
           </div>
         </div>
@@ -187,10 +187,62 @@
             ></lottie-player>
           </div>
         </div>
+        <div class="spacer"></div>
+        <div class="container cols" data-scroll-section>
+          <div class="content-anim">
+            <lottie-player
+              class="drawing"
+              src="https://lottie.host/5ad8c43c-d121-4fe0-961c-f3b628c81af4/n6Ay1I7gIX.json"
+              background="transparent"
+              speed="2"
+              loop
+              autoplay
+              data-scroll
+              data-scroll-speed="0.3"
+            ></lottie-player>
+          </div>
+          <div class="content-box">
+            <p data-scroll data-scroll-offset="150">
+              Plates with yeast will be placed on shores of infected waters, which will attract snails, the intermediate hosts for these parasites.
+              Inside the snail, the yeast cells will lyse and release the compound, curing the snails of the parasites.
+            </p>
+          </div>
+        </div>
+        <div class="container cols" data-scroll-section>
+          <div class="content-box centered">
+            <lottie-player
+              class="drawing"
+              src="https://lottie.host/c0383ed1-c376-4282-b383-4bc15bbed09c/3Ir64KSK3t.json"
+              background="transparent"
+              speed="2"
+              loop
+              autoplay
+              data-scroll
+            ></lottie-player>
+            <p data-scroll data-scroll-offset="150">
+              By reducing schistosomiasis cases globally, we can improve economic conditions in third-world countries and break the poverty cycle.
+            </p>
+            <a href="./wiki/description.html" data-scroll><button>Learn More <ion-icon name="arrow-forward-outline"></ion-icon></button
+            ></a>
+          </div>
+        </div>
+        <div class="container-promo" data-scroll-section>
+          <h1>Watch our promo video</h1>
+          <img src="https://static.igem.wiki/teams/4261/wiki/landing-page/arrow-left.svg" alt="" />
+          <iframe
+            src="https://video.igem.org/videos/embed/9ff1291a-095e-465b-a09b-492b3688ca76"
+            frameborder="0"
+            allowfullscreen
+            sandbox="allow-same-origin allow-scripts allow-popups"
+            data-scroll
+          ></iframe>
+        </div>
 
         <div class="spacer"></div>
       </div>
-      <footer data-scroll-section></footer>
+      <footer data-scroll-section>
+        <img id="hut" src="https://static.igem.wiki/teams/4261/wiki/hut.png" alt="" />
+      </footer>
     </div>
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>

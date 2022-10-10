@@ -26,7 +26,7 @@ window.addEventListener('load', () => {
   });
 });
 
-const animationDuration = 3000;
+const animationDuration = 1500;
 const frameDuration = 1000 / 60;
 const totalFrames = Math.round(animationDuration / frameDuration);
 

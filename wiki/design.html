@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/sass/style.sass" />
+    <link rel="stylesheet" href="/static/sass/locomotive-scroll.sass" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <span class="dropdown">Team <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="./team.html">Team Page</a></li>
+            <li><a href="./attributions.html">Attributions</a></li>
+            <li><a href="./collaborations.html">Collaborations</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="dropdown">Project <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="./contribution.html">Contribution</a></li>
+            <li><a href="./description.html">Description</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="dropdown">Lab <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="./design.html">Design</a></li>
+            <li><a href="./engineering.html">Engineering</a></li>
+            <li><a href="./experiments.html">Experiments</a></li>
+            <li><a href="./notebook.html">Notebook</a></li>
+            <li><a href="./proof-of-concept.html">Proof Of Concept</a></li>
+            <li><a href="./results.html">Results</a></li>
+            <li><a href="./parts.html">Parts</a></li>
+            <li><a href="./safety.html">Safety</a></li>
+            <li><a href="./hardware.html">Hardware</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="dropdown">Human Practices <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="./implementation.html">Proposed Implementation</a></li>
+            <li><a href="./human-practices.html">Human Practices</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="dropdown">Scicomm <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="./education.html">Education</a></li>
+            <li><a href="./communication.html">Communication</a></li>
+            <li><a href="./partnership.html">Partnership</a></li>
+          </ul>
+        </li>
+        <li><a href="./model.html">Modeling</a></li>
+      </ul>
+    </nav>
+    <div id="smooth-wrapper" data-scroll-container>
+      <div class="wrapper hero" data-scroll-section>
+        <div class="hero-inner" data-scroll data-scroll-speed="-1" data-scroll-position="top"></div>
+        <div class="text">
+          <h1 data-scroll>Design</h1>
+        </div>
+      </div>
+      <div class="container content" id="fixed-wrapper">
+        <div class="cont<em>ent</em>-inner">
+          <div class="project" data-scroll-section>
+            <div class="header">
+              <h1 data-scroll>Balancing Environment &amp; Efficiency</h1>
+            </div>
+            <div class="divider" data-scroll data-scroll-offset="50"></div>
+            <div class="container-text">
+              <h2 data-scroll>Choosing our Compound</h2>
+              <p data-scroll>
+                An important principle in securing the environmental viability of SchistoGONE was selecting the anti-schistosomal compound with the
+                best balance in environmental safety and anti-schistosomal efficiency. To do this, we repeated a process of research and redesign of
+                the project which can be highlighted by our journey through candidate compounds plumbagin, <em>ent</em>-pimaradienoic acid, curcumin,
+                arachidonic acid, and <em>ent</em>-kaurenoic acid.
+                <br />
+                <br />
+                Our first choice was plumbagin, a plant-based organic compound with proven antischistosomal effects in vitro against the cercarial
+                phase (Zhang et al., 12). Following further research, however, we consulted numerous professors who&mdash;using their experience in
+                parasitic diseases and schistosomes&mdash;helped us determine the extreme environmental hazards involved in using plumbagin. Plumbagin
+                has detrimental effects on other wildlife including fish, crustaceans, and snails with concentrations of just 0.9mg/L leading to
+                fatality in fish (Tu et al., 20).
+                <br />
+                <br />
+                Our second choice of <em>ent</em>-pimaradienoic acid had the opposite problem in the balance between anti-schistosomal efficiency and
+                environmental viability. <em>Ent</em>-pimaradienoic acid was tested in-vivo in mice with proof of antischistosomal properties and no
+                signs of toxicity (Mao et al., 20). However, the isomer of pimaradienoic acid that we had the capacity to produce via synthetic
+                biology was <em>syn</em>-pimaradienoic acid, a distinct constitutional isomer that would predictably have different chemical
+                properties and yield different results. <em>Syn</em>-pimaradienoic acid is produced through a different branch of pimarane diterpenoid
+                biosynthetic pathways, and the biosynthetic pathway of <em>ent</em>-pimaradienoic acid is not yet elucidated, meaning we are unable to
+                reliably produce the anti-schistosomal isomer. Moreover, the pimaradienoic acid stereoisomer available to industry for purchase is the
+                enantiomer of <em>ent</em>-pimaradienoic acid, called continentalic acid, which presumably has yet another set of chemical properties.
+                Indeed, in vitro tests of continentalic acid on schistosoma sporocysts through our partnership with UCSD's Center for Discovery and
+                Innovation in Parasitic Disease (CDIPD) confirmed this as zero effects were recorded at all concentrations. The discrepancies between
+                the isomers we could purchase, produce, and the one used in the original paper made it impossible to rely on pimaradienoic acid.
+                <br />
+                <br />
+                Curcurin was evaluated and found to have antischistosomal properties as it caused the death of all adult schistosoma mansoni adult
+                worms in doses ranging from 5-100 mM (Magalh&atilde;es et al., 09). However, the issue present was that the biosynthesis pathway to
+                produce curcumin was unclear and had many critical parts missing, meaning that it would be extremely difficult to produce the compound
+                itself. It had little to no precedent, and the gene sequences of the enzymes responsible for catalyzing its production are not yet
+                elucidated.
+                <br />
+                <br />
+                Arachidonic acid had a similar problem in the replication of the biosynthesis pathway. Though it had been found to be safe and
+                efficacious in killing schistosoma mansoni worms in mice and hamsters, arachidonic acid's pathway was only half known (Tallima et al
+                20). Through extensive research it was determined that only the second half of the biosynthesis pathway for arachidonic acid was
+                present in literature while the first half was unknown, making this compound unreliable for testing in the SchistoGONE project.
+                <br />
+                <br />
+                <em>Ent</em>-kaurenoic acid was a candidate compound due to its initial viability as a schistosomide and the clarity of its
+                biosynthesis pathways. After further research it was found that in actuality, <em>ent</em>-kaurenoic acid was not effective against
+                all stages of the worm's life cycle and only derivatives of the compound are considered promising (Oliveira et al 20). This meant that
+                it would be inefficacious for SchistoGONE's goal, which involves killing the worm at its sporocyst stage.
+                <br />
+                <br />
+                Sanguinarine was selected as the natural product to use in this project. It was found that sanguinarine resulted in 100% schistosome
+                mortality in concentrations of 10 &micro;M (equivalent to 3.68 &micro;g/mL), meeting the World Health Organization's criteria of "hit"
+                compounds for controlling schistosomiasis (Zhang et al 12). The results of the compound testing on specifically schistosoma sporocysts
+                conducted under the UCSD CDIPD revealed that sanguinarine had the highest effectiveness against in-vitro sporocysts compared to
+                plumbagin and the enantiomer of pimaradienoic acid, continentalic acid. After just 0.05 &micro;M concentration of sanguinarine,
+                sporocysts began to die. And by 1 &micro;M concentration of sanguinarine, 100% sporocyst mortality was recorded.
+                <br />
+                <br />
+                In terms of environmental safety, sanguinarine has been tested for toxicity via in vitro assays and in-vivo lab rat trials revealing
+                insignificant effects on organisms (Mackraj et al., 2008). Furthermore, the unrestrained environmental release of the compound is
+                improbable. The biosynthesis pathway involves multiple modified yeast and <em>E. coli</em> organisms that produce benign substrates of
+                sanguinarine (Fossati et al, 2014). Should the modified organisms be swept into the river or dispersed in the environment, the
+                construction of sanguinarine by a single yeast cell would not be possible. Sanguinarine's efficacy as a schistosomide and its
+                environmental safety led this compound to be chosen for the SchistoGONE project.
+              </p>
+            </div>
+
+            <div class="container-text">
+              <h2 data-scroll>Verifying the Compounds</h2>
+              <p data-scroll>
+                A primary desire of ours at the beginning of the compound selection process was verifying anti-schistosomal properties, which would
+                entail testing on real Schistosoma sporocysts. Such data was necessary as many of the compounds had never been tested specifically on
+                sporocysts before; and some, such as the differing isomers of pimaradienoic acid, had little basis in the literature as an
+                anti-schistosomal in general. This would have been extremely difficult for our team to do, however, as schistosomiasis is a deadly
+                parasitic disease. Our high school team lacked the credibility, funds, and safety measures to successfully purchase schistosomes for
+                our own research use. Furthermore, the labspace we were working at specifically barred handling the parasites. The liability and
+                legality of holding live schistosomes would thus be impossible for our team of minors.
+                <br />
+                <br />
+                Fortunately, through our contact with Dr. Conor R. Caffrey from the CDIPD, a lab that specializes in tropical parasitic diseases and
+                already operates with live schistosoma parasites, the CDIPD agreed to conduct the compound testing experiments in our place.
+                <br />
+                <br />
+                Schistosoma miracidia are suspended in a medium and then tricked via addition of salts and other stimuli to simulate presence inside
+                of a snail. The conditions trigger the miracidia's internal mechanisms to transform into sporocysts&mdash;a stage which they will
+                preserve for around 7 days. During that time, an assay of pimaradienoic acid, sanguinarine, and plumbagin is conducted on the
+                sporocysts. Data is collected on the concentrations of each compound and the efficacy of schistosome killing given by a proportion out
+                of 100 of the sporocysts killed. The data recorded allows for an analysis on which compound is capable of killing the highest amount
+                of schistosomes after 24 hours in the least amount of concentration possible.
+              </p>
+            </div>
+          </div>
+          <div class="project" data-scroll-section>
+            <div class="header">
+              <h1 data-scroll>Expression</h1>
+            </div>
+            <div class="divider" data-scroll data-scroll-offset="50"></div>
+            <div class="container-text">
+              <h2 data-scroll>Optimizing the Biosynthesis Pathway</h2>
+              <p data-scroll>
+                Sanguinarine is a benzylisoquinoline alkaloid (BIA) whose complex biosynthetic pathway is closely related to those of well-documented
+                morphinans. The production of BIAs using yeast expression systems has precedent in the literature, with the sanguinarine pathway
+                having been successfully reconstituted in <em>Saccharomyces cerevisiae</em> using (R,S)-THP as a fed substrate (Trenchard and Smolke,
+                2015). However, we endeavored to connect the THP production pathway directly to the sanguinarine production pathway. This would
+                require combining a Escherichia coli expression system with a <em>S. cerevisiae</em> expression system in a concerted multi-strain
+                expression mechanism.
+                <br />
+                <br />
+                In fundamental terms, most BIAs are derived from L-tyrosine, an amino acid precursor of L-DOPA and dopamine that is naturally
+                available in <em>E. coli</em>. A tyrosinase&mdash;in this case RsTYR, isolated from the wilt bacterium
+                <em>Ralstonia solanacearum</em>&mdash;catalyzes the formation of L-DOPA from L-tyrosine, a precursor of dopamine that is converted to
+                such by DOPA decarboxylase (DDC, or DODC). A monoamine oxidase (MAO) then converts dopamine to 3,4-dihydroxyphenylacetaldehyde
+                (3,4-DHPAA), a dopaldehyde that spontaneously condenses to form an enantiomeric mixture of (R)- and (S)-tetrahydropapaveroline (-THP)
+                via a Pictet-Spengler reaction. We roughly followed a documented reconstitution of this portion of the biosynthesis in a two-strain
+                <em>E. coli</em> expression system (Nakagawa et al., 2014) while optimizing enzymes chosen.
+                <br />
+                <br />
+                This first biosynthetic phase is difficult to reconstitute in heterologous expression systems due to the fact that TYR demonstrated
+                <em>o</em>-diphenolase activity toward both L-tyrosine, its intended substrate, and THP, the intended product and the major BIA
+                precursor (Nakagawa et al., 2014)&mdash;tyrosinases are known naturally to have both monophenolase and <em>o</em>-diphenolase activity
+                under aerobic conditions. A portion of produced THP would thus be oxidized, which would produce lower yields than desired. We then
+                optimized our choice of TYR by choosing one that possessed a comparatively lower <em>o</em>-diphenolase activity: a RsTYR (Romero et
+                al., 2006). The two-step conversion from L-DOPA to 3,4-DHPAA, catalyzed by DDC and MAO, was bypassed by replacing those enzymes with a
+                DHPAA synthase (DHPAAS) from the mosquito <em>Aedes aegypti</em> (Vavricka et al., 2011). DHPAAS has been identified in multiple
+                species of insect, including <em>A. aegypti</em>, <em>Drosophila melanogaster</em>, and <em>Anopheles gambiae</em>, to directly
+                produce 3,4-DHPAA from L-DOPA in a one-step conversion (Vavricka et al., 2011). The replacement of DDC and MAO with DHPAAS also
+                reduced the number of genes to be introduced into <em>E. coli</em>.
+                <br />
+                <br />
+                The next portion of sanguinarine's biosynthetic pathway involves the 11-step conversion of (R,S)-THP to sanguinarine through a series
+                of alkaloid intermediates. The enzymes responsible for catalyzing each of these conversions are, respectively, norcoclaurine
+                6-O-methyltransferase (6OMT); coclaurine N-methyltransferase (CNMT); 4'-O-methyltransferase (4'OMT); berberine bridge enzyme (BBE);
+                cheilanthifoline synthase (CFS), a cytochrome P450 (CYP); a cytochrome P450 reductase (CPR); stylopine synthase (STS);
+                tetrahydroprotoberberine N-methyltransferase (TNMT); <em>cis-N-</em>methylstylopine 14-hydroxylase (MSH); protopine 6-hydroxylase
+                (P6H); and dihydrobenzophenanthridine oxidase (DBOX), which was experimentally observed to be unnecessary in heterologous sanguinarine
+                production (Trenchard and Smolke, 2015). For our design, gene variants (i.e., originating from the opium poppy
+                <em>Papaver somniferum</em>, enzyme abbreviation prefix Ps, or California poppy Eschscholzia californica, prefix Ec) were selected
+                based on optimization data from Trenchard and Smolke (2015). ATR1 is a CYP from <em>Arabidopsis thaliana</em>.
+                <br />
+                <br />
+                This pathway has previously been reconstituted using a two-strain <em>Saccharomyces cerevisiae</em> expression system, with first
+                producing the intermediate (S)-reticuline using 6OMT, CNMT, and 4'OMT and the second continuing the pathway to produce sanguinarine
+                using the remaining enzymes (Hawkins and Smolke, 2008; Trenchard and Smolke, 2015). A 6OMT-CNMT expression plasmid and 4'OMT
+                expression plasmid were used in the first strain (Hawkins and Smolke, 2008), and Gateway-compatible single expression plasmids
+                containing individual recombinant genes were used in the second strain (Trenchard and Smolke, 2015), with expression cassettes being
+                homologously integrated into the <em>S. cerevisiae</em> genome in each case. Stylopine has also been produced in
+                <em>Pichia pastoris</em> from the fed substrate reticuline using recombinant BBE, CFS, and STS genes (Hori et al., 2016).
+                <br />
+                <br />
+                The <em>P. pastoris</em>-based stylopine production system cloned all three genes involved into a single vector, but for greater
+                simplicity and due to the entire THP-to-sanguinarine pathway involving ten enzymes, we opted to express pairs of the genes in the
+                THP-to-sanguinarine portion of the pathway (with five yeast plasmids expressing 6OMT-CNMT, 4'OMT-BBE, ATR1-CFS, STS-TNMT, and
+                MSH-P6H).
+                <br />
+                <br />
+                The THP production pathway plasmids were designed for transformation into standard <em>E. coli</em> strain K-12 due to precedent
+                existing for bacterial expression (Nakagawa et al., 2014). The incompatibility of cytochromes P450 and their reductases with
+                prokaryotic expression systems due to their being membrane-associated proteins led us to select <em>S. cerevisiae</em> strain
+                W303&alpha; (genotype MAT&alpha;: leu2-3,112 trp1-1 can1-100 ura3-1 ade2-1 his3-11,15), which has exhibited good yield of recombinant
+                BIAs in the literature (Hawkins and Smolke, 2010; Trenchard and Smolke, 2015).
+              </p>
+            </div>
+
+            <div class="container-text">
+              <h2 data-scroll>Designing the Constructs and Putting It All Together</h2>
+              <p data-scroll>
+                RsTYR (enzyme reference number EC 1.14.18.1; GenBank accession number NP_518458) and DHPAAS (EC 4.1.1.107) were codon-optimized for
+                expression in <em>E. coli</em>. The coding sequence of each enzyme was cloned into separate pET-28a(+) bacterial vectors with a T7-lac
+                promoter expression system, creating Plasmids A (TYR) and B (DHPAAS). pET-28a(+) is well-documented as a leading choice for
+                recombinant protein expression in <em>E. coli</em> and contains an N-terminal His-tag (Shilling et al., 2020). Each gene fragment was
+                designed to be cloned into the multiple cloning site of the PCR-linearized vector via Gibson assembly.
+                <br />
+                <br />
+                While the method of Trenchard and Smolke (2015) relies on <em>S. cerevisiae</em>-based plasmids expressing individual genes and uses
+                Gateway cloning procedures, the method of Hori et. al (2014) expresses three genes in one plasmid and still produced desirable titers
+                of stylopine, albeit in <em>P. pastoris</em>. The latter reports <em>P. pastoris</em> as being more effective than
+                <em>S. cerevisiae</em> for multi-gene expression, but this was a comparison based only on the BBE-CFS-STS steps of the biosynthetic
+                pathway with no data on the other steps (Hori et al., 2016). Only <em>Saccharomyces</em> was available to us for experimentation, and
+                following a series of professor consultations we decided to continue with <em>S. cerevisiae</em> while expressing two genes per
+                plasmid, a novel modified combination of the aforementioned methods.
+                <br />
+                <br />
+                In theory, the integration of each plasmid into the yeast genome via homologous recombination would produce the most optimal and
+                stable yields as compared to the presence of multiple episomal plasmids. In this circumstance, each gene is to be placed into a
+                cassette cloned into a yeast expression vector (YEp), allowing for the measurement of enzyme production and, in the presence of their
+                respective substrates, compound production. After ascertaining the success of this initial cloning process, gene cassettes would be
+                linearized and subcloned into yeast integrative vectors (YIp), which lack origins of replication and will become integrated into the
+                chromosome at specific loci with appropriately-designed homology regions. Nevertheless, we first introduced the YEps episomally into
+                yeast cells to test their fundamental functionality.
+                <br />
+                <br />
+                We considered multiple methods for the simultaneous expression of two genes in one plasmid for the reconstitution of the
+                THP-to-sanguinarine pathway. Polycistronic (IRES) vectors, in which one promoter controls the expression of multiple genes with
+                internal ribosome entry sites, are not particularly well-characterized in yeast, especially in the context of phytochemical
+                expression. Most studies relating to phytochemistry and biosynthesis use plasmids containing either divergent dual promoters or
+                sequential gene cassettes controlled by different promoters. The use of the same promoter multiple times in one plasmid, however, may
+                be met with complications relating to interference and unwanted spontaneous homologous recombination. A two-cassette expression system
+                was therefore designed, whereby each plasmid consisted of a PCR-linearized pXP418 vector backbone and two gene cassettes: the first
+                gene would be controlled by the TEF1 promoter already present in the vector, followed by an ADH1 terminator fragment; the second would
+                be controlled by a variable promoter fragment optimized for the second gene and the CYC1 terminator in the vector. pXP418 is a
+                high-copy plasmid vector chosen for the presence of a 2-micron origin of replication (2&micro; ori); URA3 auxotrophic marker; and TEF1
+                promoter, a strong constitutive promoter commonly used for controlling the expression of plant-derived enzymes previously used in this
+                context (Hawkins and Smolke, 2010). The gene fragments, ADH1 terminator sequence, and variable promoter sequence were then to be
+                assembled via Gibson assembly into the linearized vector.
+                <br />
+                <br />
+                The yeast plasmids were organized and numbered as follows: Plasmid 1, expressing 6OMT and CNMT; Plasmid 2, 4'OMT and BBE; Plasmid 3,
+                ATR1 and CFS; Plasmid 4, STS and TNMT; and Plasmid 5, MSH and P6H.
+                <br />
+                <br />
+                Plasmid 1 contains a P<sub>TEF1</sub>-6OMT-T<sub>ADH1</sub> cassette followed by a P<sub>PGK1</sub>-CNMT-T<sub>CYC1</sub> cassette
+                cloned into a PCR-linearized pXP418 expression vector. The strong PGK1 promoter, another constitutive promoter commonly used in
+                phytochemical applications (Lee et al., 2007), was selected to control expression of CNMT. The same promoter-terminator combination
+                and cassette scheme was used in Plasmid 2 (P<sub>TEF1</sub>-4'OMT-T<sub>ADH1</sub> and P<sub>PGK1</sub>-BBE-T<sub>CYC1</sub>), Plasmid
+                4 (P<sub>TEF1</sub>-STS-T<sub>ADH1</sub> and P<sub>PGK1</sub>-TNMT-T<sub>CYC1</sub>), and Plasmid 5 (P<sub>TEF1</sub>-MSH-T<sub
+                  >ADH1</sub
+                >
+                and P<sub>PGK1</sub>-P6H-T<sub>CYC1</sub>).
+                <br />
+                <br />
+                <img src="https://static.igem.wiki/teams/4261/wiki/plasmid-1.png" alt="" />
+                <br /><br />
+                Plasmid 3 presented different circumstances due to the explicit identification of an optimal promoter for controlling CFS expression.
+                CFS was found to be optimally expressed under the control of P<sub>TDH3</sub> (synonymous with P<sub>GDP</sub> and P<sub>GAP</sub>) in
+                a low-copy plasmid or after chromosomal integration (Trenchard and Smolke, 2015). pXP418, being a high-copy YEp, would thus
+                theoretically produce lower initial yields but would, in fact, also potentially improve post-integration expression and yield due to
+                the higher number of copies. ATR1, a CPR, was found to be unnecessary for the production of stylopine in <em>P. pastoris</em> (Hori et
+                al., 2014), but it was included in Plasmid 3 in case of discrepancies between that data and production in <em>S. cerevisiae</em>. The
+                Plasmid 3 cassettes are therefore P<sub>TEF1</sub>-ATR1-T<sub>ADH1</sub> and P<sub>TDH3</sub>-CFS-T<sub>CYC1</sub>. <br /><br />
+                <img src="https://static.igem.wiki/teams/4261/wiki/plasmid-2.png" alt="" />
+                <br /><br />
+                It would be practical to separate the expression of these genes among multiple strains of <em>S. cerevisiae</em> due to increased ease
+                of yield quantification at each step along the pathway. Collectively, this sequence of plasmids (A-B and 1-5) would reconstitute the
+                full sanguinarine biosynthetic pathway from L-tyrosine to sanguinarine in a concerted <em>E. coli</em> and
+                <em>S. cerevisiae</em> expression mechanism.
+              </p>
+            </div>
+          </div>
+          <div class="project" data-scroll-section>
+            <div class="header">
+              <h1 data-scroll>Implementation</h1>
+            </div>
+            <div class="divider" data-scroll data-scroll-offset="50"></div>
+            <div class="container-text">
+              <h2 data-scroll>Choosing Our Implementation</h2>
+              <p data-scroll>
+                When considering how to introduce our design into the environment in a safe and effective way, there were a myriad of concerns to
+                address: could we be sure that schistosomes will be reached by our product in the environment? Will the ecosystem be threatened by an
+                environmental release of our constructs?
+                <br />
+                <br />
+                To answer these questions, we consulted numerous professors, who&mdash;using their experience with schistosoma and environmental
+                application&mdash;helped us determine what would be feasible given our resources and materials.
+                <br /><br />
+                Taking in the information from these meetings, our project went through many different stages of development before we decided upon
+                the final iteration. The first iteration involved engineering yeast to secrete plumbagin directly into the water in order to kill the
+                cercariae stage of schistosoma. We soon found that this plan had many large environmental concerns as plumbagin is toxic not only to
+                schistosomes but also to many other organisms. The potential ecological ramifications caused by releasing chemical substances directly
+                into the environment was a shared concern for all our candidate compounds, as even nontoxic natural products could have unforeseen
+                negative impacts on certain organisms. The same went for releasing modified microorganisms into the environment given the
+                unpredictability of how modified DNA would behave and spread. These glaring issues revealed by the input of several experts led us to
+                regroup and rethink the direction of the project.
+                <br /><br />
+                The implementation method we decided on considers all of these concerns mentioned previously. It starts with the modified yeast and
+                <em>E. coli</em> being situated in specially designed plates along river banks, which then attract
+                <em>Biomphalaria Glabrata</em> snails that consume the yeast and sanguinarine. This results in the sporocysts inside the snails being
+                eradicated without effect on the snail. The ecosystem of these water bodies will not be drastically altered because the snails
+                themselves will survive, sanguinarine will not be released into the water, and the modified microorganisms will not be spread either.
+              </p>
+            </div>
+            <div class="container-text">
+              <h2 data-scroll>Verifying the Implementation</h2>
+              <p data-scroll>
+                In order to verify that the implementation method will be effective in reaching schistosomes, we conducted tests on whether snails are
+                actually attracted to our strain of yeast over other food sources. Results from our experiments indicated a significant preference for
+                yeast coated food.
+                <br /><br />
+                In order to verify the stability of the implementation as well as the environmental effect of the modified constructs, we conducted
+                tests on yeast surviving in simulated environment conditions. Our observations concluded that the W303&alpha; strain of yeast we were
+                using would die after 48 hours of exposure, which ensures the stability of the constructs through events such as rising tides and
+                environmental containment should the microorganisms be released.
+              </p>
+            </div>
+          </div>
+          <div class="spacer"></div>
+          <div class="project" data-scroll-section>
+            <div class="header">
+              <h1 data-scroll>Works Cited</h1>
+            </div>
+            <div class="divider" data-scroll data-scroll-offset="50"></div>
+            <div class="container-text">
+              <p data-scroll>
+                Fossati E, Ekins A, Narcross L, et al. (2014). "Reconstitution of a 10-gene pathway for synthesis of the plant alkaloid
+                dihydrosanguinarine in Saccharomyces cerevisiae." <em>Nat Commun</em>. <strong>5</strong>(1):1&mdash;11. <br /><br />
+                Mao L, Kawaide H, Higuchi T, et al. (2020). "Genomic evidence for convergent evolution of gene clusters for momilactone biosynthesis
+                in land plants." <em>Proc. Natl. Acad. Sci. U.S.A</em>. <strong>117</strong>(22):12472&mdash;12480. <br /><br />
+                Magalh&atilde;es LG, Machado CB, Morais ER, et al. (2009). "In vitro schistosomicidal activity of curcumin against Schistosoma mansoni
+                adult worms." <em>Parasitol Res.</em> <strong>104</strong>(5):1197&mdash;1201. <br /><br />
+                Shilling PJ, Mirzadeh K, Cumming AJ, et al. (2020). "Improved designs for pET expression plasmids increase protein production yield in
+                Escherichia coli." <em>Commun Biol.</em> <strong>3</strong>(1):214. <br /><br />
+                Tallima H, Hanna VS, and El Ridi R. (2020). "Arachidonic acid is a safe and efficacious schistosomicide, and an endoschistosomicide in
+                natural and experimental infections, and cysteine peptidase vaccinated hosts." <em>Front Immunol.</em> 2020; 11. <br /><br />
+                Trenchard IJ and Smolke CD. (2015). "Engineering strategies for the fermentative production of plant alkaloids in yeast."
+                <em>Metabolic Eng.</em>
+                <br /><br />
+                Tu, Xiao, et al. "Identification of Plumbagin as an Effective Chemotherapeutic Agent for Treatment of Gyrodactylus Infections."
+                Aquaculture, Elsevier, 11 Jan. 2021, <br />
+                <a href="http://www.sciencedirect.com/science/article/abs/pii/S004484862100034X"
+                  >www.sciencedirect.com/science/article/abs/pii/S004484862100034X</a
+                >. <br /><br />
+                Zhang, Si-Ming, and Kristen A Coultas. "Identification of Plumbagin and Sanguinarine as Effective Chemotherapeutic Agents for
+                Treatment of Schistosomiasis." <em>International Journal for Parasitology. Drugs and Drug Resistance</em>, Elsevier, Dec. 2013,<br />
+                <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3638872/">www.ncbi.nlm.nih.gov/pmc/articles/PMC3638872/</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar" id="sidebar" data-scroll-section>
+          <div class="sidebar-inner" data-scroll data-scroll-sticky data-scroll-target="#sidebar">
+            <span>Jump To</span>
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+      <footer data-scroll-section></footer>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="/static/js/wiki.js"></script>
+    <script type="module" src="/static/js/nav.js"></script>
+  </body>
+</html>

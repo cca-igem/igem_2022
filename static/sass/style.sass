@@ -5,17 +5,15 @@
     background: $color-highlight
     color: $color-accent
 
-:root
-    --font-size: 1.8rem
-    --duration: .44s
-    --duration-line: .84s
+::root
+    --tw-opacity: 1
 
 html
     font-size: 62.5%
 
 body
     background-color: $color-background
-    background-image: url('/static/assets/img/texture.png')
+    background-image: url('https://static.igem.wiki/teams/4261/wiki/landing-page/texture.png')
     color: $color-text
     font-family: $font-family
     margin: 0
@@ -27,8 +25,9 @@ body
 
 h1, h2, h3, h4, h5, h6
     margin: 0
-    font-weight: 400
+    font-weight: 700
     font-family: $font-family-heading
+    color: $color-text-solid
 
 h1
     font-size: 3.6rem
@@ -41,8 +40,28 @@ h2
 
 p
     margin: 0
-    font-size: 1.8rem
-    color: $color-text-secondary
+    font-size: 2rem
+    color: $color-text
+    line-height: 2
+
+    .emph
+        color: $color-text-solid
+        font-weight: 700
+
+    .highlight
+        color: white
+        --tw-opacity: .6
+        background: $gradient-blue
+        border-radius: 5px
+        padding: .4rem 1rem
+        margin-right: .6rem
+
+        &.second
+            background: $gradient-red
+
+    .subtext
+        color: $color-text-secondary
+        font-style: italic
 
 a
     color: $color-text
@@ -54,6 +73,7 @@ a
 .container
     width: 75%
     margin: 0 auto
+    position: relative
 
 .spacer
     margin: 18rem 0
@@ -62,6 +82,29 @@ footer
     height: 30rem
     width: 100%
     background: rgba(0,0,0,0.3)
+    position: relative
+    padding: 4rem 10vw
+
+    img#hut
+        height: 100%
+
+.color
+    height: 100rem
+    width: 100rem
+    position: absolute
+    transform: translate(-50%, -50%)
+
+span.gradient-blue
+    --tw-opacity: 1
+    background: $gradient-green-blue
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+span.gradient-purple-yellow
+    --tw-opacity: 1
+    background: $gradient-purple-yellow
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
 
 ///////// NAV ////////////
 
@@ -125,7 +168,6 @@ nav
                 border-radius: 3px
                 overflow: hidden
                 clip-path: inset(0 0 100% 0)
-                box-shadow: 1px 1px 8px #000
                 transition: all .5s ease
 
                 &.open
@@ -142,6 +184,7 @@ nav
                             color: $color-accent
 
 ///////// WIKI ////////////
+
 .hero
     color: $color-text
     height: 70vh
@@ -153,7 +196,6 @@ nav
         width: 100%
         height: 140%
         z-index: 1
-        background-image: url("/static/assets/img/DSC_0845.JPG")
         background-size: cover
         background-position: 50% 30%
 
@@ -165,13 +207,174 @@ nav
             width: 100%
             height: 100%
 
-    h1
+    .text
         position: absolute
         transform: translate(-50%, -50%)
         top: 50%
+        text-align: center
         left: 50%
-        font-size: 4.8rem
         z-index: 3
+        h1
+            font-size: 4.8rem
+
+.img-bg
+    position: absolute
+    pointer-events: none
+    user-select: none
+    z-index: -20
+
+    &-ultrawide
+        top: -58vh
+        left: calc(75vw - 200vh)
+        max-width: 275vh
+        height: auto
+        width: 300vw
+
+.landing-hero
+    height: 100vh
+    display: flex
+    position: relative
+
+    .text
+
+        h1
+            font-weight: 700
+            font-size: 8.4rem
+
+            .gradient-anim-fill
+                background: $gradient-blue-anim
+                background-size: 300%
+                letter-spacing: -5px
+                text-transform: uppercase
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+                animation: animated_text 10s ease-in-out infinite
+                -moz-animation: animated_text 10s ease-in-out infinite
+                -webkit-animation: animated_text 10s ease-in-out infinite
+
+        h4
+            color: $color-text
+            font-family: $font-family
+            font-size: 2.6rem
+            font-weight: 400
+
+#wrap-counter
+    font-size: 10rem
+    margin-bottom: 5rem
+    font-weight: 700
+
+.animation-wrapper
+    margin: 14rem 0
+    .container
+        width: calc(100% * 2 / 3)
+        &.cols
+            display: flex
+            height: 80vh
+
+            .content
+                &-box
+                    display: flex
+                    align-items: center
+                    flex: 1
+
+                    p
+                        font-size: 2.4rem
+                        line-height: 2
+                        transform: translateY(5rem)
+                        transition: $transition-fadeUp
+                        opacity: 0
+
+                        &.is-inview
+                            opacity: 1
+                            transform: translateY(0)
+
+                    &.centered
+                        flex-direction: column
+                        text-align: center
+                        justify-content: center
+                        p
+                            margin: 3rem 0
+                            width: 70%
+
+                        lottie-player
+                            height: 30rem
+                            transform: translateY(5rem)
+                            transition: $transition-fadeUp
+                            opacity: 0
+
+                            &.is-inview
+                                opacity: 1
+                                transform: translateY(0)
+
+                        a
+                            transform: translateY(5rem)
+                            transition: $transition-fadeUp
+                            opacity: 0
+
+                            &.is-inview
+                                opacity: 1
+                                transform: translateY(0)
+                                
+                            button
+                                cursor: pointer
+                                border-radius: 999px
+                                padding: 1.2rem 2.4rem
+                                --tw-opacity: .8
+                                background: $gradient-blue
+                                border: 1px solid $color-text
+                                font-family: $font-family
+                                font-size: 2rem
+                                color: #fff
+                                line-height: 1em
+
+                                & ion-icon
+                                    vertical-align: middle
+                                    margin-left: .5rem
+
+                &-anim
+                    display: flex
+                    flex: 1
+                    justify-content: flex-end
+                    align-items: center
+
+                    .drawing
+                        height: 40vh
+                        position: relative
+                        transform: translateY(5rem)
+                        transition: $transition-fadeUp
+                        opacity: 0
+
+                        &.is-inview
+                            opacity: 1
+                            transform: translateY(0)
+
+                        &-inner
+                            height: 100%
+.container-promo
+    margin: 12rem 0
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    h1
+        font-family: $font-family
+        font-weight: 700
+
+    img
+        margin: 5rem 0
+        transform: rotate(-20deg)
+
+    iframe
+        width: 50vw
+        height: calc(50vw * 9 / 16)
+        border-radius: 1rem
+        transform: translateY(5rem)
+        transition: $transition-fadeUp
+        opacity: 0
+
+        &.is-inview
+            opacity: 1
+            transform: translateY(0)
 
 .content
     display: flex
@@ -223,7 +426,7 @@ nav
         & > *
             opacity: 0
             transform: rotate(1.5deg) translateY(5rem)
-            transition: opacity .6s cubic-bezier(.215,.61,.355,1),transform .6s cubic-bezier(.215,.61,.355,1)
+            transition: $transition-fadeUp
             &.is-inview
                 opacity: 1
                 transform: none
@@ -235,12 +438,14 @@ nav
             transition-delay: .2s
 
     .divider
-        height: .1rem
+        height: .2rem
         width: 100%
         margin: 5rem 0
         transform: scaleX(0)
         transition: transform .6s cubic-bezier(.215,.61,.355,1)
-        background: grey
+        --tw-opacity: 0.3
+        background: $color-accent
+        background: $gradient-green-blue
         &.is-inview
             transform: scaleX(1)
 
@@ -251,11 +456,11 @@ nav
             iframe
                 width: 100%
                 height: 80rem
-                border-radius: 10px
+                border-radius: 1rem
                 // border: 2px solid $color-text
                 opacity: 0
                 transform: translateY(7rem)
-                transition: opacity .6s cubic-bezier(.215,.61,.355,1),transform .6s cubic-bezier(.215,.61,.355,1)
+                transition: $transition-fadeUp
                 &.is-inview
                     opacity: 1
                     transform: none
@@ -265,10 +470,13 @@ nav
             display: flex
             column-gap: 5rem
 
+            img
+                border-radius: 1rem
+                width: 100%
             & > *
                 opacity: 0
                 transform: translateY(5rem)
-                transition: opacity .6s cubic-bezier(.215,.61,.355,1),transform .6s cubic-bezier(.215,.61,.355,1)
+                transition: $transition-fadeUp
                 &.is-inview
                     opacity: 1
                     transform: none
@@ -283,67 +491,25 @@ nav
                 transition-delay: .1s
 
                 span.link-main
-                    display: flex
+                    display: inline-flex
                     position: relative
                     align-items: center
+                    --tw-opacity: .2
+                    background: $gradient-green-blue
+                    border-radius: 999px
+                    padding: 1rem 2.4rem
+                    cursor: pointer
+                    color: $color-text
+                    line-height: 1
 
-                    & > svg
+                    &:hover
+                        --tw-opacity: .25
+
+                    & > ion-icon
                         width: 1.8rem
+                        margin-left: .8rem
                         fill: $color-text
 
-                    a
-                        color: $color-text
-                        margin-left: 0.8rem
-                        position: relative
-                        display: inline-block
-                        position: relative
-                        line-height: 1
-                        div
-                            overflow: hidden
-                            &:first-child
-                                display: flex
-                                overflow: hidden
-                                text-shadow: 0 1.8rem 0 $color-text
-                            &:last-child
-                                position: absolute
-                                pointer-events: none
-                                right: 0
-                                left: 0
-                                bottom: -.8rem
-                                height: .5rem
-                                svg
-                                    display: block
-                                    position: absolute
-                                    right: 0
-                                    top: 0
-                                    width: 300%
-                                    height: .5rem
-                                    fill: none
-                                    stroke: $color-accent
-                                    stroke-width: 1.5px
-                                    stroke-linecap: round
-                                    // stroke-dasharray: 63.5px 128px
-                                    // stroke-dashoffset: var(--line-offset, 190.25px)
-                                    transform: translateX(var(--line-x)) translateZ(0)
-                                    transition: transform var(--line-d, 0s), stroke-dashoffset var(--line-d, 0s)
-                            span
-                                display: block
-                                backface-visibility: hidden
-                                font-style: normal
-                                transition: transform var(--duration) ease
-                                transform: translateY(var(--m, 0))
-                                $i: 1
-
-                                @while $i < 12
-                                    &:nth-child(#{$i})
-                                        transition-delay: calc($i / 20) + s
-                                        $i: $i + 1
-
-                        &:hover
-                            --m: calc(var(--font-size) * -1)
-                            --line-d: var(--duration-line)
-                            --line-x: 65.66%
-                            --line-offset: 6.35rem
         &-img
             margin-bottom: 5rem
             display: grid
@@ -357,12 +523,12 @@ nav
                 height: 24rem
                 position: relative
                 background: #ccc
-                border-radius: 10px
+                border-radius: 1rem
                 overflow: hidden
 
                 opacity: 0
                 transform: translateY(5rem)
-                transition: opacity .6s cubic-bezier(.215,.61,.355,1),transform .6s cubic-bezier(.215,.61,.355,1)
+                transition: $transition-fadeUp
                 &.is-inview
                     opacity: 1
                     transform: none
@@ -380,11 +546,11 @@ nav
                 display: flex
                 align-items: center
                 video
-                    border-radius: 10px
+                    border-radius: 1rem
                     width: 100%
                     opacity: 0
                     transform: rotate(1.5deg) translateY(5rem)
-                    transition: opacity .6s cubic-bezier(.215,.61,.355,1),transform .6s cubic-bezier(.215,.61,.355,1)
+                    transition: $transition-fadeUp
                     &.is-inview
                         opacity: 1
                         transform: none
@@ -433,3 +599,117 @@ nav
         
 
 
+
+    .timeline
+        position: relative
+        margin: 0
+        padding: 0
+        list-style: none
+
+        li
+            &.timeline-heading
+                div
+                    h3
+                        --tw-opacity: 1
+                        border-radius: .5rem
+                        background: $gradient-blue
+                        display: inline-block
+                        letter-spacing: .3rem
+                        padding: .7rem 1.5rem
+                        text-transform: uppercase
+                        margin-bottom: 5rem
+                        font-family: $font-family
+
+                        &.tl-second
+                            background: $gradient-red
+
+                    p
+                        &.subtitle
+                            color: $color-text-secondary
+
+            &.item
+                margin-bottom: 15rem
+                padding-left: 10%
+                position: relative
+
+                & > *
+                    opacity: 0
+                    transform: translateY(5rem)
+                    transition: $transition-fadeUp
+
+                    &.is-inview
+                        opacity: 1
+                        transform: translateY(0)
+
+                h2
+                    margin-bottom: 3rem
+
+                img
+                    border-radius: 1rem
+                    max-width: 70%
+
+                &::before
+                    position: absolute
+                    top: 1.4rem
+                    left: 2.4rem
+                    content: ""
+                    width: 1.6rem
+                    height: 1.6rem
+                    border: 4px solid $color-accent
+                    border-radius: 999px
+                    background: #fff
+
+                &-second
+                    &::before
+                        border: 4px solid $color-accent-secondary
+
+        &::before
+            left: 3rem
+            content: ""
+            width: .2rem
+            position: absolute
+            top: 2rem
+            bottom: 0
+            background-color: $color-text-secondary
+            z-index: -1
+
+@keyframes animated_text
+    0%
+        background-position: 0px 50%
+    50%
+        background-position: 100% 50%
+    100%
+        background-position: 0px 50%
+
+@keyframes pill
+    0%
+        transform: translateY(0)
+    60%
+        transform: translateY(75%)
+    100%
+        transform: translateY(75%)
+
+@keyframes star1_rotate
+    0%
+        transform: rotate(0)
+    100%
+        transform: rotate(360deg)
+
+@keyframes star2_growth
+    0%
+        transform: scale(0.9)
+
+    50%
+        transform: scale(1.1)
+    100%
+        transform: scale(0.9)
+
+@keyframes spark1_float
+    0%
+        transform: translate(1rem, 1rem)
+
+    50%
+        transform: translate(-1rem, -1rem)
+
+    100%
+        transform: translate(1rem, 1rem)

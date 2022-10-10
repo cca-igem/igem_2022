@@ -42,6 +42,7 @@ p
     margin: 0
     font-size: 2rem
     color: $color-text
+    line-height: 2
 
     .highlight
         color: white
@@ -429,7 +430,6 @@ nav
             column-gap: 1.6rem
             row-gap: 1.6rem
 
-
             &-two
                 grid-template-columns: 1fr 1fr
 
@@ -468,6 +468,64 @@ nav
                     &.is-inview
                         opacity: 1
                         transform: none
+
+    .timeline
+        position: relative
+        margin: 0
+        padding: 0
+        list-style: none
+
+        li
+            &.timeline-heading
+                div
+                    h3
+                        --tw-opacity: 1
+                        border-radius: .5rem
+                        background: $gradient-blue
+                        display: inline-block
+                        letter-spacing: .3rem
+                        padding: .7rem 1.5rem
+                        text-transform: uppercase
+                        margin-bottom: 5rem
+                        font-family: $font-family
+
+                    p
+                        &.subtitle
+                            color: $color-text-secondary
+
+            &.item
+                margin-bottom: 15rem
+                padding-left: 10%
+                position: relative
+
+                h2
+                    margin-bottom: 3rem
+
+                img
+                    border-radius: 1rem
+                    max-width: 70%
+
+                &::before
+                    position: absolute
+                    top: 1.4rem
+                    left: 2.4rem
+                    content: ""
+                    width: 1.6rem
+                    height: 1.6rem
+                    border: 4px solid $color-accent
+                    border-radius: 999px
+                    background: #fff
+
+
+        &::before
+            left: 3rem
+            content: ""
+            width: .2rem
+            position: absolute
+            top: 2rem
+            bottom: 0
+            background-color: $color-text-secondary
+            z-index: -1
 
 @keyframes animated_text
     0%

@@ -25,7 +25,7 @@ window.addEventListener("load", () => {
 
   scroll.on("call", (func) => {
     if (func === 'countUp') {
-      let el = document.querySelector('counter');
+      let el = document.querySelector('#counter');
       const animationDuration = 1500;
       const frameDuration = 1000 / 60;
       const totalFrames = Math.round(animationDuration / frameDuration);

@@ -1,29 +1,27 @@
-import LocomotiveScroll from "locomotive-scroll";
+import LocomotiveScroll from 'locomotive-scroll';
 
-window.addEventListener("load", () => {
+window.addEventListener('load', () => {
   const scroll = new LocomotiveScroll({
-    el: document.querySelector("[data-scroll-container]"),
+    el: document.querySelector('[data-scroll-container]'),
     smooth: true,
   });
 
-  let nav = document.querySelector("nav");
+  let nav = document.querySelector('nav');
 
   let lastScroll = 0;
 
-  scroll.on("scroll", (instance) => {
-    instance.scroll.y > 100
-      ? nav.classList.add("filled")
-      : nav.classList.remove("filled");
+  scroll.on('scroll', (instance) => {
+    instance.scroll.y > 100 ? nav.classList.add('filled') : nav.classList.remove('filled');
     if (instance.scroll.y < lastScroll) {
-      nav.style.top = "0";
+      nav.style.top = '0';
     } else {
-      nav.style.top = "-8rem";
+      nav.style.top = '-8rem';
     }
 
     lastScroll = instance.scroll.y;
   });
 
-  scroll.on("call", (func) => {
+  scroll.on('call', (func) => {
     if (func === 'countUp') {
       let el = document.querySelector('#counter');
       const animationDuration = 1500;
@@ -45,16 +43,20 @@ window.addEventListener("load", () => {
         }
       }, frameDuration);
     }
+
+    if (func === 'update') {
+      scroll.update();
+    }
   });
 
-  let ul = document.querySelector("#sidebar ul");
+  let ul = document.querySelector('#sidebar ul');
 
-  document.querySelectorAll(".project .header h1").forEach((el) => {
-    let item = document.createElement("li");
-    let itemLink = document.createElement("a");
+  document.querySelectorAll('.project .header h1').forEach((el) => {
+    let item = document.createElement('li');
+    let itemLink = document.createElement('a');
     itemLink.textContent = el.textContent;
-    itemLink.addEventListener("click", () => {
-      scroll.scrollTo(el, { offset: "-60px" });
+    itemLink.addEventListener('click', () => {
+      scroll.scrollTo(el, { offset: '-60px' });
     });
 
     item.appendChild(itemLink);
@@ -62,32 +64,29 @@ window.addEventListener("load", () => {
   });
 });
 
-let dropdowns = document.querySelectorAll(".dropdown");
-let submenus = document.querySelectorAll(".submenu");
+let dropdowns = document.querySelectorAll('.dropdown');
+let submenus = document.querySelectorAll('.submenu');
 
-window.addEventListener("click", (e) => {
-  if (
-    !e.target.classList.contains("submenu") &&
-    !e.target.classList.contains("dropdown")
-  ) {
+window.addEventListener('click', (e) => {
+  if (!e.target.classList.contains('submenu') && !e.target.classList.contains('dropdown')) {
     dropdowns.forEach((item) => {
-      item.parentElement.querySelector(".submenu").classList.remove("open");
+      item.parentElement.querySelector('.submenu').classList.remove('open');
     });
   }
 });
 
 dropdowns.forEach((el) =>
-  el.addEventListener("click", () => {
-    let submenu = el.parentElement.querySelector(".submenu");
+  el.addEventListener('click', () => {
+    let submenu = el.parentElement.querySelector('.submenu');
 
-    if (!submenu.classList.contains("open")) {
+    if (!submenu.classList.contains('open')) {
       submenus.forEach((item) => {
-        item.classList.remove("open");
-        item.style.transition = "all .5s ease";
+        item.classList.remove('open');
+        item.style.transition = 'all .5s ease';
       });
-      submenu.classList.add("open");
+      submenu.classList.add('open');
     } else {
-      submenu.classList.remove("open");
+      submenu.classList.remove('open');
     }
   })
 );

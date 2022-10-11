@@ -1,19 +1,202 @@
-{% extends "layout.html" %}
-  
-{% block title %}Proof of Concept{% endblock %}
-{% block lead %}Expand upon your Silver medal work for Proposed Implementation and develop a proof of concept for your project.{% endblock %}
-
-{% block page_content %}
-
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Gold Medal Criterion #4</h4>
-      <p>Expand upon your Silver medal work for Proposed Implementation and develop a proof of concept for your project.<p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/medals">2022 Medals Page</a> for more information.</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/sass/style.sass" />
+    <link rel="stylesheet" href="/static/sass/locomotive-scroll.sass" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <span class="dropdown">Team <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="./team.html">Team Page</a></li>
+            <li><a href="./attributions.html">Attributions</a></li>
+            <li><a href="./collaborations.html">Collaborations</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="dropdown">Project <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="./contribution.html">Contribution</a></li>
+            <li><a href="./description.html">Description</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="dropdown">Lab <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="./design.html">Design</a></li>
+            <li><a href="./engineering.html">Engineering</a></li>
+            <li><a href="./experiments.html">Experiments</a></li>
+            <li><a href="./notebook.html">Notebook</a></li>
+            <li><a href="./proof-of-concept.html">Proof Of Concept</a></li>
+            <li><a href="./results.html">Results</a></li>
+            <li><a href="./parts.html">Parts</a></li>
+            <li><a href="./safety.html">Safety</a></li>
+            <li><a href="./hardware.html">Hardware</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="dropdown">Human Practices <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="./implementation.html">Proposed Implementation</a></li>
+            <li><a href="./human-practices.html">Human Practices</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="dropdown">Scicomm <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="./education.html">Education</a></li>
+            <li><a href="./communication.html">Communication</a></li>
+            <li><a href="./partnership.html">Partnership</a></li>
+          </ul>
+        </li>
+        <li><a href="./model.html">Modeling</a></li>
+      </ul>
+    </nav>
+    <div id="smooth-wrapper" data-scroll-container>
+      <div class="wrapper hero" data-scroll-section>
+        <div class="hero-inner" data-scroll data-scroll-speed="-1" data-scroll-position="top"></div>
+        <div class="text">
+          <h1 data-scroll>Proof of Concept</h1>
+        </div>
+      </div>
+      <div class="container content" id="fixed-wrapper">
+        <div class="content-inner">
+          <div class="project" data-scroll-section>
+            <div class="header">
+              <h1 data-scroll>Snail Preference For Yeast</h1>
+            </div>
+            <div class="divider" data-scroll data-scroll-offset="50"></div>
+            <div class="container-text">
+              <p data-scroll>
+                One of the key components of our proposed implementation involves <em>Biomphalaria Glabrata</em> being attracted to the W303 yeast in
+                order to deliver sanguinarine. Should the molluscs not even recognize the presence of our modified yeast microorganisms, the proposed
+                implementation would fail. Thankfully, it is a well known trick in agriculture communities that yeast can be used to attract snails,
+                and numerous studies confirm this innate attraction (Chan et al 14). However, a precedent has not been set for whether snails actually
+                prefer yeast over other available food options in the environment. Should <em>Biomphalaria Glabrata</em> ignore our yeast plates in
+                favor of more attractive options, the proposed implementation would fail again. <br /><br />
+                As such, to demonstrate the feasibility of implementing SchistoGONE using eco-plates in the environment, we conducted tests on whether
+                snails have a preference for yeast over other food sources. We conducted this experiment by presenting
+                <em>Pomacea Bridgesii</em> snails with two options of lettuce: regular and W303 yeast-covered lettuce. By measuring the number of
+                times the snails consume the yeast-covered lettuce, we were able to determine that the snails have an inherent preference for the
+                presence of yeast. In the 20 trials of testing, 16 resulted in the snail selecting the yeast option. In a control test, we presented
+                snails with two equal options of regular lettuce and randomly assigned one of the pieces to be the fake "yeast" option. The snails
+                chose the "yeast" option by random chance, 11 out of 20 times. <br /><br />
+                <img src="https://static.igem.wiki/teams/4261/wiki/lab-stuff/proofofconcept1.png" alt="" />
+                <br /><br />
+                In order to verify the significance of the snail preference for yeast, we ran 5000 simulations of our null hypothesis (that yeast has
+                no attraction for snails), each consisting of 20 random decisions between yeast and non-yeast. <br /><br />
+                <img src="https://static.igem.wiki/teams/4261/wiki/lab-stuff/proofofconcept2.png" alt="" />
+                <br /><br />
+                The sampling distribution for this proportion was then modeled using a normal curve. <br /><br />
+                <img src="https://static.igem.wiki/teams/4261/wiki/lab-stuff/proofofconcept3.png" alt="" />
+                <br /><br />
+                By taking the expected proportion (p) as 0.5 from the 20 trials (n), the mean and standard deviation are 0.5 and 0.1118 respectively.
+                <br /><br />
+                <img src="https://static.igem.wiki/teams/4261/wiki/lab-stuff/proofofconcept4.png" alt="" />
+                <br /><br />
+                A z-score is then calculated, revealing our observed 0.8 proportion of yeast is in the 99th percentile should it be by random chance.
+                Assuming the yeast we used in our experiment did not attract the snails in any capacity, there is a less than 1% chance of the
+                observed preference for yeast lettuce occuring. The results are significant enough to reject the null hypothesis with a confidence
+                level of 99%. As such, it can be concluded that there is a preference for W303 yeast for molluscs in our experiments.
+              </p>
+            </div>
+          </div>
+          <div class="spacer"></div>
+          <div class="project" data-scroll-section>
+            <div class="header">
+              <h1 data-scroll>Yeast Survival in the Environment</h1>
+            </div>
+            <div class="divider" data-scroll data-scroll-offset="50"></div>
+            <div class="container-text">
+              <p data-scroll>
+                Another key component of our proposed implementation involves our modified sanguinarine-producing microorganisms surviving
+                environmental conditions in target geographies. Previous literature has confirmed that E.coli and W303 yeast are capable of surviving
+                in open environments thriving in natural bodies of water (Chekabab et al 13). However, in the event of rising tides or waves crashing
+                into the plate, it is unknown if the modified W303 yeast will be able to survive specific conditions in target locations such as
+                Africa. Should the W303 yeast perish after short exposure to the natural conditions of the environment, the proposed implementation
+                would fail.
+                <br /><br />As such, to demonstrate the feasibility of implementing SchistoGONE in target environments&mdash;primarily Africa&mdash;we
+                designed a microcosm for testing the survival of yeast in conditions mimicking Lake Malawi, a notoriously schistosome infested water.
+                We were able to replicate the pH, sedimentation, salinity, temperature, general hardness, and carbonate hardness following
+                specifications from numerous sources of literature. Microcosms have long been used as artificial, simplified ecosystems and many
+                studies have used this concept to test their own hypotheses on. Many of the alterations that were implemented were based off of a
+                prior study where researchers mimicked rice paddy fields in Africa due to the locational similarities between their study and ours
+                (Akpodiete et al 21). Our pH, sedimentation, salinity, temperature, general hardness, and carbonate hardness value replications were
+                based on prior recorded data on Lake Malawi's characteristics in order to produce more accurate results (Massinga et al 22).
+                <br /><br />
+                Water was sampled before, immediately after, 24 hours after, and then 48 hours after insertion of W303 s. cerevisiae, and then placed
+                in a yeast agar plate to observe potential growth due to surviving s. Cerevisiae.
+                <br /><br />
+                <img src="https://static.igem.wiki/teams/4261/wiki/lab-stuff/proofofconcept5.png" alt="" />
+                <br /><br />There was no presence of yeast in the initial sampling. Immediately, 24 hours, and 48 hours after yeast was inserted into
+                the water, the samples returned notable W303 colony growth. This confirmed that yeast had survived in the simulated conditions.
+                Because the W303 yeast was still alive in the microcosm waters, we rationalized that SchistoGONE eco-plates would remain functional in
+                rising and turbulent tides.
+              </p>
+            </div>
+          </div>
+          <div class="spacer"></div>
+          <div class="project" data-scroll-section>
+            <div class="header">
+              <h1 data-scroll>CDIPD Anti-Schistosomal Compound Testing</h1>
+            </div>
+            <div class="divider" data-scroll data-scroll-offset="50"></div>
+            <div class="container-text">
+              <p data-scroll>
+                One of the most important aspects of our proposed implementation is sanguinarine killing schistosoma sporocysts. Though sanguinarine
+                has been confirmed as a cercaricidal against schistosoma in existing literature, sanguinarine testing on schistosoma sporocysts is
+                unprecedented (Zhang et al 13). As such, in order to confirm that the use of sanguinarine in <em>B. Glabrata</em> snails would be able
+                to eliminate the residing sporocyst phase of schistosoma, we aspired to conduct an assay on the survival of schistosoma sporocysts
+                given concentrations of sanguinarine, as well as other anti-schistosomal compounds plumbagin and continentalic acid.
+                <br /><br />Graciously, Dr. Connor Caffrey from the Center for Discovery and Innovation in Parasitic Diseases (CDIPD) offered to
+                conduct the assays for our team's project as the CDIPD has an established history of working with and possessing the schistosoma
+                parasite. Dr. Caffrey designed the procedures and generated replicative data on the three anti-schistosomal compounds. From his study,
+                he determined that sanguinarine was the most potent compared to the other two compounds tested. The number proportion of alive
+                sporocysts were analyzed for different concentrations of each compound. Sanguinarine had a recorded 50% effective concentration of
+                ~0.25 &micro;M, followed by plumbagin (EC50 ~5 &micro;M), whereas continentalic acid was ineffective even at the highest concentration
+                of 5 &micro;M. <br /><br />
+                <img src="https://static.igem.wiki/teams/4261/wiki/lab-stuff/proofofconcept6.png" alt="" />
+              </p>
+            </div>
+          </div>
+          <div class="spacer"></div>
+          <div class="project" data-scroll-section>
+            <div class="header">
+              <h1 data-scroll>References</h1>
+            </div>
+            <div class="divider" data-scroll data-scroll-offset="50"></div>
+            <div class="container-text">
+              <p data-scroll>
+                Akpodiete, N. O., & Tripet, F. (2021). Laboratory and microcosm experiments reveal contrasted adaptive responses to ammonia and water
+                mineralisation in aquatic stages of the sibling species Anopheles gambiae (sensu stricto) and Anopheles coluzzii.
+                <em>Parasites & Vectors</em>, 14(1), 1-19. <br /><br />
+                Chan, G. F., Othman, F., Zulkiffli, M. H., Yousif, R. H., Yusof, A. M., & Rashid, N. A. A. (2014). Yeasts as the Novel Attractant of
+                Pomacea canaliculata. <em>International Journal of Sciences: Basic and Applied Research</em>, 18, 51-60. <br /><br />
+                Chekabab, S. M., Paquin-Veillette, J., Dozois, C. M., & Harel, J. (2013). The ecological habitat and transmission of Escherichia coli
+                O157: H7. <em>FEMS Microbiol Lett</em>, 341, 1-12. <br /><br />
+                Massangi, A. V., (2022). Lake Malawi. World Lake Database : International Lake Environment Committee Foundation (ILEC),<br />
+                wldb.ilec.or.jp/Display/html/3594.
+                <br /><br />
+                Zhang, S. M., & Coultas, K. A. (2013). Identification of plumbagin and sanguinarine as effective chemotherapeutic agents for treatment
+                of schistosomiasis. <em>International Journal for Parasitology: Drugs and Drug Resistance</em>, 3, 28-34.
+              </p>
+            </div>
+          </div>
+          <div class="spacer"></div>
+        </div>
+        <div class="sidebar" id="sidebar" data-scroll-section>
+          <div class="sidebar-inner" data-scroll data-scroll-sticky data-scroll-target="#sidebar">
+            <span>Jump To</span>
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+      <footer data-scroll-section></footer>
     </div>
-  </div>
-</div>
-
-{% endblock %}
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="/index.js"></script>
+  </body>
+</html>

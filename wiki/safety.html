@@ -1,50 +1,120 @@
-{% extends "layout.html" %}
-  
-{% block title %}Safety{% endblock %}
-{% block lead %}Describe all the safety issues of your project.{% endblock %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/sass/style.sass" />
+    <link rel="stylesheet" href="/static/sass/locomotive-scroll.sass" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <span class="dropdown">Team <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="./team.html">Team Page</a></li>
+            <li><a href="./attributions.html">Attributions</a></li>
+            <li><a href="./collaborations.html">Collaborations</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="dropdown">Project <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="./contribution.html">Contribution</a></li>
+            <li><a href="./description.html">Description</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="dropdown">Lab <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="./design.html">Design</a></li>
+            <li><a href="./engineering.html">Engineering</a></li>
+            <li><a href="./experiments.html">Experiments</a></li>
+            <li><a href="./notebook.html">Notebook</a></li>
+            <li><a href="./proof-of-concept.html">Proof Of Concept</a></li>
+            <li><a href="./results.html">Results</a></li>
+            <li><a href="./parts.html">Parts</a></li>
+            <li><a href="./safety.html">Safety</a></li>
+            <li><a href="./hardware.html">Hardware</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="dropdown">Human Practices <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="./implementation.html">Proposed Implementation</a></li>
+            <li><a href="./human-practices.html">Human Practices</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="dropdown">Scicomm <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="./education.html">Education</a></li>
+            <li><a href="./communication.html">Communication</a></li>
+            <li><a href="./partnership.html">Partnership</a></li>
+          </ul>
+        </li>
+        <li><a href="./model.html">Modeling</a></li>
+      </ul>
+    </nav>
+    <div id="smooth-wrapper" data-scroll-container>
+      <div class="wrapper hero" data-scroll-section>
+        <div class="hero-inner" data-scroll data-scroll-speed="-1" data-scroll-position="top"></div>
+        <div class="text">
+          <h1 data-scroll>Safety</h1>
+        </div>
+      </div>
+      <div class="container content" id="fixed-wrapper">
+        <div class="content-inner">
+          <div class="project" data-scroll-section>
+            <div class="header">
+              <h1 data-scroll>Overview</h1>
+            </div>
+            <div class="divider" data-scroll data-scroll-offset="50"></div>
+            <div class="container-text">
+              <p data-scroll>
+                Prior to any physical lab work, certification obtained via extensive online training and in-person orientation was required for all
+                team members.
+                <br /><br />
+                The topics encompassed:
+              </p>
+            </div>
+            <ul class="container-list" data-scroll>
+              <li class="out">Hygiene</li>
+              <li class="in">No food or drink allowed</li>
+              <li class="in">Washing hands</li>
+              <li class="in">Disinfect surfaces with 70% ethanol</li>
 
-{% block page_content %}
+              <li class="out">PPE</li>
+              <li class="in">Lab coats</li>
+              <li class="in">Gloves at all times</li>
+              <li class="in">Close toed shoes</li>
 
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Safety and Security Award</h4>
-      <p>Synthetic biology will need to be used safely and securely if local people are to solve local problems all around the world. In 2022, the Safety and Security Committee is challenging teams to apply biological engineering approaches to manage risks associated with synthetic biology. Can you take the next step in incremental progress towards knowledge, understanding, and tools that will make the use of synthetic biology safer and more secure?</p>
-      <p>To compete for the Safety and Security award, please describe your work on this page and also fill out the description on the <a href="https://competition.igem.org/deliverables/judging-form">judging form</a>.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/awards">2022 Awards Page</a> for more information.</p>
+              <li class="out">Biohazard disposal</li>
+              <li class="in">Special biohazard disposal containers</li>
+              <li class="in">Deactivate hazardous liquids with 1:10 bleach solution and sit for 20 minutes before sink disposal</li>
+              <li class="in">Special sharp object disposal containers</li>
+
+              <li class="out">Storage</li>
+              <li class="in">Proper labeling for all reagents</li>
+              <li class="in">Proper hazard labeling and convention for all reagents</li>
+              <li class="in">Proper understanding of storage units (freezers, incubators, etc.)</li>
+
+              <li class="out">Handling</li>
+              <li class="in">Prior research on operating lab equipment</li>
+              <li class="in">Proper pipetting procedures</li>
+              <li class="in">Research and rehearsal before each planned procedure</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sidebar" id="sidebar" data-scroll-section>
+          <div class="sidebar-inner" data-scroll data-scroll-sticky data-scroll-target="#sidebar">
+            <span>Jump To</span>
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+      <footer data-scroll-section></footer>
     </div>
-  </div>
-</div>
-
-<div class="row mt-4">
-  <div class="col">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <p>On this page of your wiki, you should write about how you are addressing any safety issues in your project. The wiki is a place where you can go beyond the questions on the safety forms, and write about whatever safety topics are most interesting in your project. (You do not need to copy your safety forms onto this wiki page.)</p>
-    <div class="bd-callout bd-callout-info">
-      <p>Please visit the <a href="https://responsibility.igem.org/safety-policies/introduction">Safety Policies page</a> to find this year's safety requirements & deadlines, and to learn about safe & responsible research in iGEM.</p>
-    </div>
-  </div>
-</div>
-
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>Safe Project Design</h2>
-    <hr>
-    <p>Does your project include any safety features? Have you made certain decisions about the design to reduce risks? Write about them here! For example:</p>
-    <ul>
-      <li>Choosing a non-pathogenic chassis</li>
-      <li>Choosing parts that will not harm humans / animals / plants</li>
-      <li>Substituting safer materials for dangerous materials in a proof-of-concept experiment</li>
-      <li>Including an "induced lethality" or "kill-switch" device</li>
-    </ul>
-  </div>
-  <div class="col-lg-4">
-    <h2>Safe Lab Work</h2>
-    <hr>
-    <p>What safety procedures do you use every day in the lab? Did you perform any unusual experiments, or face any unusual safety issues? Write about them here!</p>
-  </div>
-</div>
-
-{% endblock %}
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="/index.js"></script>
+  </body>
+</html>

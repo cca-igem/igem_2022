@@ -1,29 +1,94 @@
-{% extends "layout.html" %}
-  
-{% block title %}Experiments{% endblock %}
-{% block lead %}Describe the research, experiments, and protocols you used in your iGEM project.{% endblock %}
-
-{% block page_content %}
-
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <p>Describe the research, experiments, and protocols you used in your iGEM project. These should be detailed enough for another team to repeat your experiments.</p>
-    <p>If you made Parts this year, please remember to put all information, characterization, and measurement data on the Part's Main Page on the <a href="http://parts.igem.org/Main_Page">Registry</a>.</p>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2019.igem.org/Team:Nantes/Experiments">2019 Nantes</a></li>
-      <li><a href="https://2019.igem.org/Team:TU_Eindhoven/Experiments">2019 TU Eindhoven</a></li>
-      <li><a href="https://2019.igem.org/Team:Mingdao/Demonstrate">2019 Mingdao</a></li>
-      <li><a href="https://2020.igem.org/Team:Amsterdam/Experiments">2020 Amsterdam</a></li>
-      <li><a href="https://2020.igem.org/Team:NCTU_Formosa/Experiments">2020 NCTU Formosa</a></li>
-      <li><a href="https://2020.igem.org/Team:USAFA/Experiments">2020 USAFA</a></li>
-    </ul>
-  </div>
-</div>
-
-{% endblock %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/sass/style.sass" />
+    <link rel="stylesheet" href="/static/sass/locomotive-scroll.sass" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <span class="dropdown">Team <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="./team.html">Team Page</a></li>
+            <li><a href="./attributions.html">Attributions</a></li>
+            <li><a href="./collaborations.html">Collaborations</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="dropdown">Project <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="./contribution.html">Contribution</a></li>
+            <li><a href="./description.html">Description</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="dropdown">Lab <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="./design.html">Design</a></li>
+            <li><a href="./engineering.html">Engineering</a></li>
+            <li><a href="./experiments.html">Experiments</a></li>
+            <li><a href="./notebook.html">Notebook</a></li>
+            <li><a href="./proof-of-concept.html">Proof Of Concept</a></li>
+            <li><a href="./results.html">Results</a></li>
+            <li><a href="./parts.html">Parts</a></li>
+            <li><a href="./safety.html">Safety</a></li>
+            <li><a href="./hardware.html">Hardware</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="dropdown">Human Practices <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="./implementation.html">Proposed Implementation</a></li>
+            <li><a href="./human-practices.html">Human Practices</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="dropdown">Scicomm <ion-icon name="chevron-down-outline"></ion-icon></span>
+          <ul class="submenu">
+            <li><a href="./education.html">Education</a></li>
+            <li><a href="./communication.html">Communication</a></li>
+            <li><a href="./partnership.html">Partnership</a></li>
+          </ul>
+        </li>
+        <li><a href="./model.html">Modeling</a></li>
+      </ul>
+    </nav>
+    <div id="smooth-wrapper" data-scroll-container>
+      <div class="wrapper hero" data-scroll-section>
+        <div class="hero-inner" data-scroll data-scroll-speed="-1" data-scroll-position="top"></div>
+        <div class="text">
+          <h1 data-scroll>Experiments</h1>
+        </div>
+      </div>
+      <div class="container content" id="fixed-wrapper">
+        <div class="content-inner">
+          <div class="project" data-scroll-section>
+            <div class="header">
+              <h1 data-scroll>Description</h1>
+            </div>
+            <div class="divider" data-scroll data-scroll-offset="50"></div>
+            <div class="container-text">
+              <p data-scroll>
+                Although we are confident that our project, SchistoGONE, will positively impact many communities with the absence of disease, we must
+                follow ethical practices in implementing our project globally. Through a discussion on implementation, our team tackles how exactly we
+                would install bioreactors and plates, safety issues that may arise, and even the local laws that would help or hurt us in reaching our
+                goal.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar" id="sidebar" data-scroll-section>
+          <div class="sidebar-inner" data-scroll data-scroll-sticky data-scroll-target="#sidebar">
+            <span>Jump To</span>
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+      <footer data-scroll-section></footer>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="/index.js"></script>
+  </body>
+</html>

@@ -574,6 +574,20 @@ nav
                         margin-left: .8rem
                         fill: $color-text
 
+        &-list
+            font-size: 2rem
+
+            li
+                &.out
+                    color: $color-text-solid
+                    font-weight: 700
+                &.in
+                    margin-left: 2.5em
+                    list-style-type: circle
+
+                &:not(:last-child)
+                    margin-bottom: 1.2rem
+
         &-img
             margin-bottom: 5rem
             display: grid
